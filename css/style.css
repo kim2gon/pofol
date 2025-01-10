@@ -16,8 +16,8 @@ body {
 /* 섹션 1 */
 
 #section1 {
-    height: 1250px;
-    width: 2000px;
+    height: 1796px;
+    width: 3105px;
     left: 0;
     top: 0;
     position: absolute;
@@ -37,10 +37,10 @@ body {
 /* 섹션 2 */
 
 #section2 {
-    height: 1250px;
-    width: 2000px;
-    left: 2000px;
-    top: 0;
+    height: 0px;
+    width: 0px;
+    left: 0px;
+    bottom: 0;
     position: absolute;
 }
 
@@ -67,10 +67,10 @@ body {
 /* 섹션 3 */
 
 #section3 {
-    height: 1250px;
-    width: 2000px;
-    left: 0;
-    top: 1250px;
+    height: 0px;
+    width: 0px;
+    right: 0;
+    top: 0px;
     position: absolute;
 }
 
@@ -92,9 +92,11 @@ body {
 /* 섹션 4 */
 
 #section4 {
-    height: 1250px;
-    width: 2000px;
-    left: 2000px;
-    top: 1250px;
+    height: 2500px;
+    width: 4000px;
+    left: 0px;
+    top: 0px;
+    right: 0;
+    bottom: 0;
     position: absolute;
 }
