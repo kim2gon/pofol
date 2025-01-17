@@ -35,6 +35,9 @@ body, html {
     display: inline-block;
 }
 
+.cap1 {
+    position: absolute;
+}
 
 
 
@@ -55,7 +58,6 @@ body, html {
     bottom: 0;
     position: absolute;
     display: inline-block;
-    background: green;
 }
 
 
@@ -87,7 +89,6 @@ body, html {
     top: 0;
     position: absolute;
     display: inline-block;
-    background: blue;
 }
 
 
