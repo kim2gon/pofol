@@ -108,12 +108,26 @@ body, html {
 /* 섹션 4 */
 
 #section4 {
-    height: 1080px;
-    width: 1920px;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
+    height: 516px;
+    width: 613px;
+    left: 1790px;
+    top: 742px;
     position: absolute;
     display: inline-block;
+}
+
+.pot img {
+    animation: moveAndTilt 5s ease-in-out infinite;
+}
+
+@keyframes moveAndTilt {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-30px) rotate(-3deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
 }
