@@ -1,7 +1,3 @@
-// window.onload = () => {
-//     window.moveTo(2000,1250);
-// };
-
 window.onload = () => {
     const dragscroll = document.querySelector('.dragscroll');
     const content = document.querySelector('.background');
