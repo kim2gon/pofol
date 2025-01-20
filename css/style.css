@@ -37,12 +37,43 @@ body, html {
 
 .cap1 {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 1326px;
+    top: 500px;
+    animation: moveslider1 6s linear infinite;
+    animation-delay: 2s;
+}
+.cap12 {
+    position: absolute;
+    left: 1326px;
+    top: 500px;
+    animation: moveslider1 6s linear infinite;
+    animation-delay: 4s;
+}
+.cap13 {
+    position: absolute;
+    left: 1326px;
+    top: 500px;
+    animation: moveslider1 6s linear infinite;
+    animation-delay: 6s;
 }
 
 
 
+
+
+
+
+
+
+
+@keyframes moveslider1 {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        transform: translateX(294px) translateY(170px);
+    }
+}
 
 
 
