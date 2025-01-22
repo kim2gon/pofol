@@ -17,4 +17,8 @@ window.onload = () => {
     // 초기 스크롤 위치 설정
     dragscroll.scrollLeft = centerX;
     dragscroll.scrollTop = centerY;
-}
+};
+
+document.getElementById('dim').addEventListener('click', function () {
+    this.style.display = 'none';  // dim 효과를 숨김
+});
