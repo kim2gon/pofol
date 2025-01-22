@@ -1,8 +1,11 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+
 body,
 html {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: "Pretendard Variable";
 }
 
 .dragscroll {
@@ -39,12 +42,14 @@ html {
 #dim h2 {
     color: #fff;
     font-size: 44.79pt;
+    font-weight: 500;
 }
 
 #dim p {
     color: #fff;
     font-size: 24.27pt;
-    margin-top: 33pt;
+    margin-top: 33px;
+    font-weight: 300;
 }
 
 .background {
@@ -67,12 +72,14 @@ html {
     display: inline-block;
 }
 
+/* 캡슐 1 */
+
 .cap1 {
     position: absolute;
     left: 1326px;
     top: 500px;
     animation: moveslider1 6s linear infinite;
-    animation-delay: 0s;
+    animation-delay: 1s;
     opacity: 0;
 }
 
@@ -81,18 +88,16 @@ html {
     left: 1326px;
     top: 500px;
     animation: moveslider1 6s linear infinite;
-    animation-delay: 3s;
+    animation-delay: 4s;
     opacity: 0;
 }
-
-
-
 
 @keyframes moveslider1 {
     0% {
         transform: translateX(0) translateY(0);
         opacity: 0;
     }
+
     5% {
         opacity: 1;
     }
@@ -100,18 +105,185 @@ html {
     95% {
         opacity: 1;
     }
+
     100% {
         transform: translateX(294px) translateY(170px);
         opacity: 0;
     }
 }
 
+/* 캡슐2 */
 
+.cap2 {
+    position: absolute;
+    left: 1150px;
+    top: 723px;
+    animation: moveslider2 6s linear infinite;
+    animation-delay: 1s;
+    opacity: 0;
+}
 
+.cap22 {
+    position: absolute;
+    left: 1150px;
+    top: 723px;
+    animation: moveslider2 6s linear infinite;
+    animation-delay: 4s;
+    opacity: 0;
+}
 
+@keyframes moveslider2 {
+    0% {
+        transform: translateX(0) translateY(0);
+        opacity: 0;
+    }
 
+    5% {
+        opacity: 1;
+    }
 
+    95% {
+        opacity: 1;
+    }
 
+    100% {
+        transform: translateX(185px) translateY(107px);
+        opacity: 0;
+    }
+}
+
+/* 캡슐 3 */
+
+.cap3 {
+    position: absolute;
+    left: 363px;
+    top: 1040px;
+    animation: moveslider3 6s linear infinite;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+.cap32 {
+    position: absolute;
+    left: 365px;
+    top: 1040px;
+    animation: moveslider3 6s linear infinite;
+    animation-delay: 4s;
+    opacity: 0;
+}
+
+@keyframes moveslider3 {
+    0% {
+        transform: translateX(0) translateY(0);
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(277px) translateY(160px);
+        opacity: 0;
+    }
+}
+
+/* 캡슐 4 */
+
+.cap4 {
+    position: absolute;
+    left: 536px;
+    top: 342px;
+    animation: moveslider4 6s linear infinite forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+.cap42 {
+    position: absolute;
+    left: 536px;
+    top: 342px;
+    animation: moveslider4 6s linear infinite forwards;
+    animation-delay: 3s;
+    opacity: 0;
+}
+
+.cap43 {
+    position: absolute;
+    left: 536px;
+    top: 342px;
+    animation: moveslider4 6s linear infinite forwards;
+    animation-delay: 5s;
+    opacity: 0;
+}
+
+.cap44 {
+    position: absolute;
+    left: 536px;
+    top: 342px;
+    animation: moveslider4 6s linear infinite forwards;
+    animation-delay: 7s;
+    opacity: 0;
+}
+
+.cap45 {
+    position: absolute;
+    left: 272px;
+    top: 492px;
+    animation: moveslider5 6s linear infinite;
+    animation-delay: 7s;
+    opacity: 1;
+}
+
+.cap46 {
+    position: absolute;
+    left: 272px;
+    top: 492px;
+    animation: moveslider5 6s linear infinite;
+    animation-delay: 9s;
+    opacity: 1;
+}
+
+.cap47 {
+    position: absolute;
+    left: 272px;
+    top: 492px;
+    animation: moveslider5 6s linear infinite;
+    animation-delay: 11s;
+    opacity: 1;
+}
+
+@keyframes moveslider4 {
+    0% {
+        transform: translateX(0) translateY(0);
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-264px) translateY(149px);
+        opacity: 1;
+    }
+
+}
+
+@keyframes moveslider5 {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    100% {
+        transform: translateX(198px) translateY(113px);
+        opacity: 1;
+    }
+}
 
 /* 섹션 2 */
 
