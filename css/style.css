@@ -236,7 +236,7 @@ html {
     top: 492px;
     animation: moveslider5 6s linear infinite;
     animation-delay: 7s;
-    opacity: 1;
+    opacity: 0;
 }
 
 .cap46 {
@@ -245,7 +245,7 @@ html {
     top: 492px;
     animation: moveslider5 6s linear infinite;
     animation-delay: 9s;
-    opacity: 1;
+    opacity: 0;
 }
 
 .cap47 {
@@ -254,7 +254,7 @@ html {
     top: 492px;
     animation: moveslider5 6s linear infinite;
     animation-delay: 11s;
-    opacity: 1;
+    opacity: 0;
 }
 
 @keyframes moveslider4 {
@@ -271,17 +271,159 @@ html {
         transform: translateX(-264px) translateY(149px);
         opacity: 1;
     }
-
 }
 
 @keyframes moveslider5 {
     0% {
         transform: translateX(0) translateY(0);
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
     }
 
     100% {
         transform: translateX(198px) translateY(113px);
-        opacity: 1;
+        opacity: 0;
+    }
+}
+
+/* hover */
+.con1 .hover1 {
+    position: absolute;
+    left: 1272px;
+    top: 130px;
+    animation: hovering1 4s ease-in-out infinite;
+}
+
+.con1 .hover2 {
+    position: absolute;
+    left: 840px;
+    top: 289px;
+    animation: hovering1 4s ease-in-out infinite;
+}
+
+.con1 .hover3 {
+    position: absolute;
+    left: 180px;
+    top: 590px;
+    animation: hovering1 4s ease-in-out infinite;
+}
+
+.con1 .caution1 {
+    position: absolute;
+    left: 1290px;
+    top: 30px;
+    animation: hovering2 4s ease-in-out infinite;
+}
+
+.con1 .caution2 {
+    position: absolute;
+    left: 940px;
+    top: 150px;
+    animation: hovering2 4s ease-in-out infinite;
+}
+
+.con1 .caution3 {
+    position: absolute;
+    left: 190px;
+    top: 450px;
+    animation: hovering2 4s ease-in-out infinite;
+}
+
+@keyframes hovering1 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-40px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes hovering2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-60px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.con1 .human1 {
+    position: absolute;
+    left: 1235px;
+    top: 742px;
+}
+
+.con1 .workcar1 {
+    position: absolute;
+    right: 858px;
+    top: 0px;
+    animation: driving1 12s ease-in-out infinite;
+}
+
+.con1 .worker1 {
+    position: absolute;
+    left: 300px;
+    top: 1280px;
+}
+
+.con1 .worker2 {
+    position: absolute;
+    right: 600px;
+    top: 60px;
+}
+
+.con1 .drone1 {
+    position: absolute;
+    right: 1340px;
+    top: 45px;
+    animation: hovering3 4s ease-in-out infinite;
+}
+
+.con1 .drone2 {
+    position: absolute;
+    left: 1090px;
+    top: 1010px;
+    animation: hovering3 4s ease-in-out infinite;
+}
+
+@keyframes driving1 {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-279px) translateY(158px);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes hovering3 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(40px);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
 
@@ -289,15 +431,33 @@ html {
 
 #section2 {
     height: 1000px;
-    width: 1000px;
+    width: 2000px;
     left: 0;
     bottom: 0;
     position: absolute;
     display: inline-block;
 }
 
+.con2 {
+    position: absolute;
+    left: 90px;
+    bottom:  5px;
+}
 
+.con2 .capcase {
+    position: absolute;
+    left: -165px;
+    bottom:  -40px;
+    z-index: 1;
+}
 
+.con2 .caution {
+    position: absolute;
+    left: 78px;
+    bottom:  1050px;
+    z-index: 2;
+    animation: hovering1 4s ease-in-out infinite;
+}
 
 
 
