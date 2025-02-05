@@ -59,6 +59,7 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    overflow: hidden;
 }
 
 /* 섹션 1 */
@@ -290,46 +291,43 @@ html {
 }
 
 /* hover */
-.con1 .hover1 {
+.con1 .plus {
     position: absolute;
     left: 1272px;
     top: 130px;
-    animation: hovering1 4s ease-in-out infinite;
 }
 
-.con1 .hover2 {
+.con1 .next {
     position: absolute;
     left: 840px;
     top: 289px;
-    animation: hovering1 4s ease-in-out infinite;
 }
 
-.con1 .hover3 {
+.con1 .pop {
     position: absolute;
     left: 180px;
     top: 590px;
-    animation: hovering1 4s ease-in-out infinite;
 }
 
 .con1 .caution1 {
     position: absolute;
     left: 1290px;
     top: 30px;
-    animation: hovering2 4s ease-in-out infinite;
+    animation: hovering1 4s ease-in-out infinite;
 }
 
 .con1 .caution2 {
     position: absolute;
     left: 940px;
     top: 150px;
-    animation: hovering2 4s ease-in-out infinite;
+    animation: hovering1 4s ease-in-out infinite;
 }
 
 .con1 .caution3 {
     position: absolute;
     left: 190px;
     top: 450px;
-    animation: hovering2 4s ease-in-out infinite;
+    animation: hovering1 4s ease-in-out infinite;
 }
 
 @keyframes hovering1 {
@@ -339,20 +337,6 @@ html {
 
     50% {
         transform: translateY(-40px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes hovering2 {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-60px);
     }
 
     100% {
@@ -389,14 +373,14 @@ html {
     position: absolute;
     right: 1340px;
     top: 45px;
-    animation: hovering3 4s ease-in-out infinite;
+    animation: hovering2 4s ease-in-out infinite;
 }
 
 .con1 .drone2 {
     position: absolute;
     left: 1090px;
     top: 1010px;
-    animation: hovering3 4s ease-in-out infinite;
+    animation: hovering2 4s ease-in-out infinite;
 }
 
 @keyframes driving1 {
@@ -413,7 +397,7 @@ html {
     }
 }
 
-@keyframes hovering3 {
+@keyframes hovering2 {
     0% {
         transform: translateY(0);
     }
@@ -441,37 +425,151 @@ html {
 .con2 {
     position: absolute;
     left: 90px;
-    bottom:  5px;
+    bottom: 5px;
+}
+
+.con2 img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .con2 .capcase {
     position: absolute;
     left: -165px;
-    bottom:  -40px;
+    bottom: -40px;
     z-index: 1;
 }
 
 .con2 .caution {
     position: absolute;
     left: 78px;
-    bottom:  1050px;
+    bottom: 1050px;
     z-index: 2;
     animation: hovering1 4s ease-in-out infinite;
 }
 
+.con2 .pen {
+    position: absolute;
+    left: 1650px;
+    bottom: 480px;
+    animation: hovering1 6s ease-in-out infinite;
+}
 
+.con2 .penshadow {
+    position: absolute;
+    left: 1650px;
+    bottom: 480px;
+}
 
+.con2 .human1 {
+    position: absolute;
+    left: 530px;
+    bottom: 270px;
+}
 
+.con2 .worker1 {
+    position: absolute;
+    left: 1170px;
+    bottom: 540px;
+}
 
+.con2 .worker2 {
+    position: absolute;
+    left: 1910px;
+    bottom: 85px;
+}
 
+.con2 .worker3 {
+    position: absolute;
+    left: 1750px;
+    bottom: 360px;
+}
 
+.con2 .capsules {
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    left: 320px;
+    bottom: 360px;
+    transform: rotate(-30deg);
+}
 
+.rancap {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
 
+.capsule8 {
+    position: absolute;
+    left: 685px;
+    bottom: 500px;
+    animation: moveslider6 6s linear infinite forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
 
+.capsule9 {
+    position: absolute;
+    left: 685px;
+    bottom: 500px;
+    animation: moveslider6 6s linear infinite forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
 
+.capsule10 {
+    position: absolute;
+    left: 685px;
+    bottom: 500px;
+    animation: moveslider6 6s linear infinite forwards;
+    animation-delay: 3s;
+    opacity: 0;
+}
 
+.capsule11 {
+    position: absolute;
+    left: 685px;
+    bottom: 500px;
+    animation: moveslider6 6s linear infinite forwards;
+    animation-delay: 4s;
+    opacity: 0;
+}
 
+.capsule12 {
+    position: absolute;
+    left: 685px;
+    bottom: 500px;
+    animation: moveslider6 6s linear infinite forwards;
+    animation-delay: 5s;
+    opacity: 0;
+}
 
+.capsule13 {
+    position: absolute;
+    left: 685px;
+    bottom: 500px;
+    animation: moveslider6 6s linear infinite forwards;
+    animation-delay: 6s;
+    opacity: 0;
+}
+
+@keyframes moveslider6 {
+    0% {
+        transform: translateX(0) translateY(0);
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(485px) translateY(275px);
+        opacity: 1;
+    }
+}
 
 
 
@@ -486,7 +584,6 @@ html {
     position: absolute;
     display: inline-block;
 }
-
 
 
 
