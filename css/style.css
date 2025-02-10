@@ -486,6 +486,25 @@ html {
     bottom: 360px;
 }
 
+.con2 .worker4 {
+    position: absolute;
+    left: 2350px;
+    bottom: 123px;
+}
+
+.con2 .worker5 {
+    position: absolute;
+    left: 2315px;
+    bottom: 405px;
+}
+
+.drone3 {
+    position: absolute;
+    left: 2260px;
+    bottom: 610px;
+    animation: hovering2 4s ease-in-out infinite;
+}
+
 .con2 .capsules {
     position: absolute;
     width: 120px;
@@ -505,7 +524,7 @@ html {
     position: absolute;
     left: 685px;
     bottom: 500px;
-    animation: moveslider6 6s linear infinite forwards;
+    animation: moveslider6 12s linear infinite forwards;
     animation-delay: 1s;
     opacity: 0;
 }
@@ -514,7 +533,7 @@ html {
     position: absolute;
     left: 685px;
     bottom: 500px;
-    animation: moveslider6 6s linear infinite forwards;
+    animation: moveslider6 12s linear infinite forwards;
     animation-delay: 2s;
     opacity: 0;
 }
@@ -523,7 +542,7 @@ html {
     position: absolute;
     left: 685px;
     bottom: 500px;
-    animation: moveslider6 6s linear infinite forwards;
+    animation: moveslider6 12s linear infinite forwards;
     animation-delay: 3s;
     opacity: 0;
 }
@@ -532,7 +551,7 @@ html {
     position: absolute;
     left: 685px;
     bottom: 500px;
-    animation: moveslider6 6s linear infinite forwards;
+    animation: moveslider6 12s linear infinite forwards;
     animation-delay: 4s;
     opacity: 0;
 }
@@ -541,7 +560,7 @@ html {
     position: absolute;
     left: 685px;
     bottom: 500px;
-    animation: moveslider6 6s linear infinite forwards;
+    animation: moveslider6 12s linear infinite forwards;
     animation-delay: 5s;
     opacity: 0;
 }
@@ -550,8 +569,117 @@ html {
     position: absolute;
     left: 685px;
     bottom: 500px;
-    animation: moveslider6 6s linear infinite forwards;
+    animation: moveslider6 12s linear infinite forwards;
     animation-delay: 6s;
+    opacity: 0;
+}
+
+.capsule14 {
+    position: absolute;
+    left: 685px;
+    bottom: 500px;
+    animation: moveslider6 12s linear infinite forwards;
+    animation-delay: 7s;
+    opacity: 0;
+}
+
+.capsule15 {
+    position: absolute;
+    left: 685px;
+    bottom: 500px;
+    animation: moveslider6 12s linear infinite forwards;
+    animation-delay: 8s;
+    opacity: 0;
+}
+
+.capsule16 {
+    position: absolute;
+    left: 685px;
+    bottom: 500px;
+    animation: moveslider6 12s linear infinite forwards;
+    animation-delay: 9s;
+    opacity: 0;
+}
+
+.capsule17 {
+    position: absolute;
+    left: 685px;
+    bottom: 500px;
+    animation: moveslider6 12s linear infinite forwards;
+    animation-delay: 10s;
+    opacity: 0;
+}
+
+.capsule18 {
+    position: absolute;
+    left: 685px;
+    bottom: 500px;
+    animation: moveslider6 12s linear infinite forwards;
+    animation-delay: 11s;
+    opacity: 0;
+}
+
+.capsule19 {
+    position: absolute;
+    left: 685px;
+    bottom: 500px;
+    animation: moveslider6 12s linear infinite forwards;
+    animation-delay: 12s;
+    opacity: 0;
+}
+
+
+.capsule20 {
+    position: absolute;
+    left: 1170px;
+    bottom: 225px;
+    animation: moveslider7 6s linear infinite;
+    animation-delay: 13s;
+    opacity: 0;
+}
+
+.capsule21 {
+    position: absolute;
+    left: 1170px;
+    bottom: 225px;
+    animation: moveslider7 6s linear infinite;
+    animation-delay: 14s;
+    opacity: 0;
+}
+
+.capsule22 {
+    position: absolute;
+    left: 1170px;
+    bottom: 225px;
+    animation: moveslider7 6s linear infinite;
+    animation-delay: 15s;
+    opacity: 0;
+}
+
+.capsule23 {
+    position: absolute;
+    left: 1170px;
+    bottom: 225px;
+    animation: moveslider7 6s linear infinite;
+    animation-delay: 16s;
+    opacity: 0;
+}
+
+.capsule24 {
+    position: absolute;
+    left: 1170px;
+    bottom: 225px;
+    animation: moveslider7 6s linear infinite;
+    animation-delay: 17s;
+    opacity: 0;
+}
+
+.capsule25 {
+    position: absolute;
+    left: 1170px;
+    bottom: 225px;
+    animation: moveslider7 6s linear infinite;
+    animation-delay: 18s;
     opacity: 0;
 }
 
@@ -571,18 +699,36 @@ html {
     }
 }
 
+@keyframes moveslider7 {
+    0% {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+    }
 
+    95% {
+        opacity: 1;
+    }
 
+    100% {
+        transform: translateX(185px) translateY(-95px);
+        opacity: 0;
+    }
+}
 
 /* 섹션 3 */
 
 #section3 {
-    height: 1000px;
-    width: 1000px;
+    height: 2062px;
+    width: 1561px;
     right: 0;
     top: 0;
     position: absolute;
     display: inline-block;
+}
+.con3 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
 }
 
 
@@ -625,5 +771,44 @@ html {
 
     100% {
         transform: translateY(0) rotate(0deg);
+    }
+}
+
+#section4 .workcar1 {
+    position: absolute;
+    right: 1025px;
+    top: 630px;
+}
+
+#section4 .worker1 {
+    position: absolute;
+    right: 1000px;
+    top: 590px;
+}
+
+#section4 .worker2 {
+    position: absolute;
+    right: -115px;
+    bottom: -145px;
+}
+
+#section4 .workcar2 {
+    position: absolute;
+    right: -240px;
+    top: -5px;
+    animation: driving2 12s ease-in-out infinite;
+}
+
+@keyframes driving2 {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-300px) translateY(155px);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
     }
 }
