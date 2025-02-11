@@ -381,6 +381,7 @@ html {
     left: 1090px;
     top: 1010px;
     animation: hovering2 4s ease-in-out infinite;
+    animation-delay: 1s;
 }
 
 @keyframes driving1 {
@@ -503,6 +504,7 @@ html {
     left: 2260px;
     bottom: 610px;
     animation: hovering2 4s ease-in-out infinite;
+    animation-delay: 2s;
 }
 
 .con2 .capsules {
@@ -725,15 +727,25 @@ html {
     position: absolute;
     display: inline-block;
 }
+
 .con3 {
     position: absolute;
-    left: 0px;
-    bottom: 0px;
+    left: 87px;
+    bottom: 52px;
 }
 
+.capclick {
+    position: absolute;
+    left: 658px;
+    bottom: 144px;
+}
 
-
-
+.con3 .caution {
+    position: absolute;
+    left: 795px;
+    bottom: 450px;
+    animation: hovering1 4s ease-in-out infinite;
+}
 
 
 
@@ -778,6 +790,8 @@ html {
     position: absolute;
     right: 1025px;
     top: 630px;
+    animation: driving3 12s ease-in-out infinite;
+    animation-delay: 1s;
 }
 
 #section4 .worker1 {
@@ -797,6 +811,7 @@ html {
     right: -240px;
     top: -5px;
     animation: driving2 12s ease-in-out infinite;
+    animation-delay: 2s;
 }
 
 @keyframes driving2 {
@@ -806,6 +821,20 @@ html {
 
     50% {
         transform: translateX(-300px) translateY(155px);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes driving3 {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-245px) translateY(-140px);
     }
 
     100% {

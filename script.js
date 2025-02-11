@@ -37,7 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const containerWidth = container.clientWidth;
     const containerHeight = container.clientHeight;
     const imageSize = 0; // 이미지 크기 (가로, 세로)
-    const minImages = 30; // 최소 이미지 개수 유지
+    const minImages = 30; // 최소 이미지 개수
+    let createdImages = []; // 생성된 이미지들을 저장하는 배열
 
     function getRandomPosition() {
         const x = Math.random() * (containerWidth - imageSize);
@@ -50,38 +51,46 @@ document.addEventListener("DOMContentLoaded", () => {
         const randomIndex = Math.floor(Math.random() * images.length);
         const newImage = images[randomIndex].cloneNode(); // 기존 이미지 복제
         const { x, y } = getRandomPosition();
+        newImage.style.position = "absolute"; // 위치 지정
         newImage.style.left = `${x}px`;
         newImage.style.top = `${y}px`;
         newImage.style.opacity = "0"; // 처음에는 숨김
+        newImage.classList.add("random-image"); // 클래스 추가
 
         container.appendChild(newImage);
+        createdImages.push(newImage); // 배열에 추가
 
         // 이미지 서서히 나타남
         setTimeout(() => {
             newImage.style.opacity = "1";
         }, 100);
-
-        return newImage;
     }
 
-    function showRandomImage() {
-        const newImage = createRandomImage();
+    function removeRandomImage() {
+        if (createdImages.length > minImages) {
+            const randomIndex = Math.floor(Math.random() * createdImages.length);
+            const randomImage = createdImages[randomIndex]; // 랜덤한 이미지 선택
 
-        // 2초 후 추가된 이미지 중 하나 제거 (초기 이미지는 유지)
-        setTimeout(() => {
-            const allImages = Array.from(container.querySelectorAll(".random-image"));
-            const extraImages = allImages.slice(minImages); // 최소 개수를 초과한 이미지들만 선택
-
-            if (extraImages.length > 0) {
-                const randomToHide = extraImages[Math.floor(Math.random() * extraImages.length)];
-                randomToHide.style.opacity = "0";
+            if (randomImage) {
+                randomImage.style.opacity = "0"; // 서서히 사라짐
                 setTimeout(() => {
-                    if (container.contains(randomToHide)) {
-                        randomToHide.remove();
+                    if (container.contains(randomImage)) {
+                        randomImage.remove(); // 완전히 삭제
+                        createdImages.splice(randomIndex, 1); // 배열에서도 제거
                     }
                 }, 1000);
             }
-        }, 2000);
+        }
+    }
+
+    function showRandomImage() {
+        createRandomImage(); // 새로운 이미지 생성
+        setTimeout(removeRandomImage, 2000); // 2초 후 랜덤한 이미지 삭제
+    }
+
+    // 처음 페이지 열리면 30개의 이미지 생성
+    for (let i = 0; i < minImages; i++) {
+        createRandomImage();
     }
 
     // 2초마다 실행
