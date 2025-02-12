@@ -734,6 +734,18 @@ html {
     bottom: 52px;
 }
 
+.con3 img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.machine {
+    position: absolute;
+    left: 466px;
+    bottom: 1009px;
+}
+
 .capclick {
     position: absolute;
     left: 658px;
@@ -747,15 +759,137 @@ html {
     animation: hovering1 4s ease-in-out infinite;
 }
 
+.con3 .worker1 {
+    position: absolute;
+    left: 1110px;
+    bottom: 330px;
+}
+
+.con3 .worker2 {
+    position: absolute;
+    left: 1250px;
+    bottom: 600px;
+}
+
+.con3 .worker3 {
+    position: absolute;
+    left: 1247px;
+    bottom: -200px;
+}
+
+.con3 .worker4 {
+    position: absolute;
+    left: 1050px;
+    bottom: -460px;
+}
+
+.con3 .worker5 {
+    position: absolute;
+    left: 420px;
+    bottom: -145px;
+}
+
+.con3 .human1 {
+    position: absolute;
+    left: 1080px;
+    bottom: 1035px;
+}
+
+.con3 .human2 {
+    position: absolute;
+    left: 305px;
+    bottom: 152px;
+}
+
+.con3 .workcar1 {
+    position: absolute;
+    left: 360px;
+    bottom: 790px;
+    animation: driving3 12s ease-in-out infinite;
+    animation-delay: 6s;
+}
+
+.con3 .workcar2 {
+    position: absolute;
+    left: 1135px;
+    bottom: 48px;
+    animation: driving1 12s ease-in-out infinite;
+    animation-delay: 5s;
+}
+
+.con3 .workcar3 {
+    position: absolute;
+    left: 630px;
+    bottom: -260px;
+    animation: driving1 15s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.con3 .movingcap {
+    position: absolute;
+    left: 573px;
+    bottom: -280px;
+    animation: driving1 15s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.con3 .drone {
+    position: absolute;
+    left: 1258px;
+    bottom: 910px;
+    animation: hovering2 4s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.capsule26 {
+    position: absolute;
+    left: 595px;
+    bottom: 1125px;
+    opacity: 0;
+    animation: moveslider8 6s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes moveslider8 {
+    0% {
+        transform: translateX(0) translateY(0);
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(294px) translateY(170px);
+        opacity: 0;
+    }
+}
 
 
 
 
+/* .capsule {
+    position: absolute;
+    left: 797px;
+    bottom: 635px;
+    animation: rotate 5s linear infinite;
+    animation-delay: 1s;
+    transform-origin: 50% 50%
+} */
 
-
-
-
-
+/* @keyframes rotate {
+    0% {
+        transform: rotate(0deg) translateX(143px) translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(143px) translateY(55px) rotate(-360deg);
+    }
+} */
 
 /* 섹션 4 */
 
@@ -790,7 +924,7 @@ html {
     position: absolute;
     right: 1025px;
     top: 630px;
-    animation: driving3 12s ease-in-out infinite;
+    animation: driving3 20s ease-in-out infinite;
     animation-delay: 1s;
 }
 
@@ -810,8 +944,8 @@ html {
     position: absolute;
     right: -240px;
     top: -5px;
-    animation: driving2 12s ease-in-out infinite;
-    animation-delay: 2s;
+    animation: driving2 15s ease-in-out infinite;
+    animation-delay: 5s;
 }
 
 @keyframes driving2 {
