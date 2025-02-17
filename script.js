@@ -96,3 +96,18 @@ document.addEventListener("DOMContentLoaded", () => {
     // 2초마다 실행
     setInterval(showRandomImage, 2000);
 });
+
+let recycle = document.querySelector('.recyclepopup');
+
+document.querySelector('.capcase').addEventListener('click', function () {
+    recycle.style.display = 'block';
+});
+
+// recycle.addEventListener('click', function () {
+//     this.style.display = 'none';
+// });
+
+document.addEventListener('click', function (e) {
+    if(e.target.className =="recyclepopup"){return false};
+    recycle.style.display = 'none';
+});

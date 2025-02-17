@@ -423,6 +423,14 @@ html {
     display: inline-block;
 }
 
+.recyclepopup {
+    position: absolute;
+    left: 438px;
+    bottom: 372px;
+    display: none;
+    z-index: 99;
+}
+
 .con2 {
     position: absolute;
     left: 90px;
@@ -743,7 +751,7 @@ html {
 .machine {
     position: absolute;
     left: 466px;
-    bottom: 1009px;
+    bottom: 1007px;
 }
 
 .capclick {
@@ -847,8 +855,8 @@ html {
     left: 595px;
     bottom: 1118px;
     opacity: 0;
-    animation: moveslider8 8s linear infinite;
-    animation-delay: 1s;
+    animation: moveslider8 12s linear infinite;
+    animation-delay: 2s;
 }
 
 .capsule27 {
@@ -856,8 +864,8 @@ html {
     left: 595px;
     bottom: 1118px;
     opacity: 0;
-    animation: moveslider8 8s linear infinite;
-    animation-delay: 2s;
+    animation: moveslider8 12s linear infinite;
+    animation-delay: 4s;
 }
 
 .capsule28 {
@@ -865,8 +873,8 @@ html {
     left: 595px;
     bottom: 1118px;
     opacity: 0;
-    animation: moveslider8 8s linear infinite;
-    animation-delay: 3s;
+    animation: moveslider8 12s linear infinite;
+    animation-delay: 6s;
 }
 
 .capsule29 {
@@ -874,8 +882,8 @@ html {
     left: 595px;
     bottom: 1118px;
     opacity: 0;
-    animation: moveslider8 8s linear infinite;
-    animation-delay: 4s;
+    animation: moveslider8 12s linear infinite;
+    animation-delay: 8s;
 }
 
 .capsule30 {
@@ -883,8 +891,8 @@ html {
     left: 595px;
     bottom: 1118px;
     opacity: 0;
-    animation: moveslider8 8s linear infinite;
-    animation-delay: 5s;
+    animation: moveslider8 12s linear infinite;
+    animation-delay: 10s;
 }
 
 .capsule31 {
@@ -892,77 +900,37 @@ html {
     left: 595px;
     bottom: 1118px;
     opacity: 0;
-    animation: moveslider8 8s linear infinite;
-    animation-delay: 6s;
+    animation: moveslider8 12s linear infinite;
+    animation-delay: 12s;
 }
+
+/* 방향전환 */
 
 .capsule32 {
     position: absolute;
-    left: 595px;
-    bottom: 1118px;
+    left: 1088px;
+    bottom: 822px;
     opacity: 0;
-    animation: moveslider8 8s linear infinite;
-    animation-delay: 7s;
-}
-
-.capsule32 {
-    position: absolute;
-    left: 595px;
-    bottom: 1118px;
-    opacity: 0;
-    animation: moveslider8 8s linear infinite;
-    animation-delay: 7s;
+    animation: moveslider9 6s linear infinite;
+    animation-delay: 14s;
 }
 
 .capsule33 {
     position: absolute;
-    left: 595px;
-    bottom: 1118px;
+    left: 1088px;
+    bottom: 822px;
     opacity: 0;
-    animation: moveslider8 8s linear infinite;
-    animation-delay: 8s;
+    animation: moveslider9 6s linear infinite;
+    animation-delay: 16s;
 }
-
-/* 방향전환 */
 
 .capsule34 {
     position: absolute;
     left: 1088px;
     bottom: 822px;
     opacity: 0;
-    animation: moveslider9 4s linear infinite;
-    animation-delay: 9s;
-    animation-play-state: running;
-}
-
-.capsule35 {
-    position: absolute;
-    left: 1088px;
-    bottom: 822px;
-    opacity: 0;
-    animation: moveslider9 4s linear infinite;
-    animation-delay: 10s;
-    animation-play-state: running;
-}
-
-.capsule36 {
-    position: absolute;
-    left: 1088px;
-    bottom: 822px;
-    opacity: 0;
-    animation: moveslider9 4s linear infinite;
-    animation-delay: 11s;
-    animation-play-state: running;
-}
-
-.capsule37 {
-    position: absolute;
-    left: 1088px;
-    bottom: 822px;
-    opacity: 0;
-    animation: moveslider9 4s linear infinite;
-    animation-delay: 12s;
-    animation-play-state: running;
+    animation: moveslider9 6s linear infinite;
+    animation-delay: 18s;
 }
 
 @keyframes moveslider8 {
@@ -988,39 +956,14 @@ html {
     }
 
     100% {
-        transform: translateX(-196px) translateY(137px);
+        transform: translateX(-150px) translateY(110px);
         opacity: 1;
     }
 }
 
-.rotate {
-    position: absolute;
-    left: 602px;
-    bottom: 443px;
-    opacity: 0;
-    /* animation: rotate1 4s infinite;
-    animation-delay: 4s; */
-}
+/* 회전판 */
 
-@keyframes rotate1 {
-    0% {
-        opacity: 1;
-    }
-
-    5% {
-        opacity: 0;
-    }
-
-    95% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.capsule38 {
+.capsule35 {
     position: absolute;
     left: 887px;
     bottom: 691px;
@@ -1031,20 +974,14 @@ html {
 @keyframes rotate2 {
     0% {
         transform: translateX(0) translateY(0);
-        opacity: 1;
-    }
-
-    95% {
-        opacity: 1;
     }
 
     100% {
         transform: translateX(52px) translateY(70px);
-        opacity: 0;
     }
 }
 
-.capsule39 {
+.capsule36 {
     position: absolute;
     left: 939px;
     bottom: 621px;
@@ -1054,126 +991,95 @@ html {
 @keyframes rotate3 {
     0% {
         transform: translateX(0) translateY(0);
-        opacity: 1;
-    }
-
-    95% {
-        opacity: 1;
     }
 
     100% {
         transform: translateX(-61px) translateY(67px);
-        opacity: 0;
     }
 }
 
-.capsule40 {
+.capsule37 {
     position: absolute;
     left: 878px;
     bottom: 554px;
     animation: rotate4 4s linear infinite;
 }
+
 @keyframes rotate4 {
     0% {
         transform: translateX(0) translateY(0);
-        opacity: 1;
-    }
-
-    95% {
-        opacity: 1;
     }
 
     100% {
         transform: translateX(-130px) translateY(13px);
-        opacity: 0;
     }
 }
 
-.capsule41 {
+.capsule38 {
     position: absolute;
     left: 748px;
     bottom: 541px;
     animation: rotate5 4s linear infinite;
 }
+
 @keyframes rotate5 {
     0% {
         transform: translateX(0) translateY(0);
-        opacity: 1;
-    }
-
-    95% {
-        opacity: 1;
     }
 
     100% {
-        transform: translateX(-72px) translateY(-54px);
-        opacity: 0;
+        transform: translateX(-88px) translateY(-54px);
     }
 }
 
-.capsule42 {
+.capsule39 {
     position: absolute;
     left: 660px;
     bottom: 595px;
     animation: rotate6 4s linear infinite;
 }
+
 @keyframes rotate6 {
     0% {
         transform: translateX(0) translateY(0);
-        opacity: 1;
-    }
-
-    95% {
-        opacity: 1;
     }
 
     100% {
         transform: translateX(16px) translateY(-77px);
-        opacity: 0;
     }
 }
 
-.capsule43 {
+.capsule40 {
     position: absolute;
     left: 676px;
     bottom: 672px;
     animation: rotate7 4s linear infinite;
 }
+
 @keyframes rotate7 {
     0% {
         transform: translateX(0) translateY(0);
-        opacity: 1;
-    }
-
-    95% {
-        opacity: 1;
     }
 
     100% {
         transform: translateX(93px) translateY(-38px);
-        opacity: 0;
     }
 }
 
-.capsule44 {
+.capsule41 {
     position: absolute;
     left: 769px;
     bottom: 710px;
     animation: rotate8 4s linear infinite;
 }
+
 @keyframes rotate8 {
     0% {
         transform: translateX(0) translateY(0);
-        opacity: 1;
-    }
-
-    95% {
-        opacity: 1;
     }
 
     100% {
         transform: translateX(118px) translateY(19px);
-        opacity: 0;
     }
 }
 
@@ -1183,7 +1089,7 @@ html {
     bottom: 333px;
 }
 
-.capsule45 {
+.capsule42 {
     position: absolute;
     left: 615px;
     bottom: 545px;
