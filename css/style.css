@@ -932,6 +932,7 @@ html {
     opacity: 0;
     animation: moveslider9 4s linear infinite;
     animation-delay: 9s;
+    animation-play-state: running;
 }
 
 .capsule35 {
@@ -941,6 +942,7 @@ html {
     opacity: 0;
     animation: moveslider9 4s linear infinite;
     animation-delay: 10s;
+    animation-play-state: running;
 }
 
 .capsule36 {
@@ -950,6 +952,7 @@ html {
     opacity: 0;
     animation: moveslider9 4s linear infinite;
     animation-delay: 11s;
+    animation-play-state: running;
 }
 
 .capsule37 {
@@ -959,6 +962,7 @@ html {
     opacity: 0;
     animation: moveslider9 4s linear infinite;
     animation-delay: 12s;
+    animation-play-state: running;
 }
 
 @keyframes moveslider8 {
@@ -977,7 +981,7 @@ html {
     }
 }
 
-/* @keyframes moveslider9 {
+@keyframes moveslider9 {
     0% {
         transform: translateX(0) translateY(0);
         opacity: 1;
@@ -987,7 +991,7 @@ html {
         transform: translateX(-196px) translateY(137px);
         opacity: 1;
     }
-} */
+}
 
 .rotate {
     position: absolute;
