@@ -97,17 +97,19 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(showRandomImage, 2000);
 });
 
+let overlay = document.querySelector('.overlay');
 let recycle = document.querySelector('.recyclepopup');
 
 document.querySelector('.capcase').addEventListener('click', function () {
+    overlay.style.display = 'block'
     recycle.style.display = 'block';
 });
 
-// recycle.addEventListener('click', function () {
-//     this.style.display = 'none';
-// });
+recycle.addEventListener('click', function() {
+    window.location.href = 'index.html';
+});
 
-document.addEventListener('click', function (e) {
-    if(e.target.className =="recyclepopup"){return false};
+overlay.addEventListener('click', function() {
+    overlay.style.display = 'none';
     recycle.style.display = 'none';
 });
