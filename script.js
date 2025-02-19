@@ -106,7 +106,7 @@ document.querySelector('.capcase').addEventListener('click', function () {
 });
 
 recycle.addEventListener('click', function() {
-    window.location.href = 'index.html';
+    window.location.href = 'https://www.nespresso.com/kr/ko/made-with-care';
 });
 
 overlay.addEventListener('click', function() {
