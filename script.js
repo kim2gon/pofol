@@ -27,6 +27,9 @@ window.onload = () => {
 document.getElementById('dim').addEventListener('click', function () {
     this.style.display = 'none';  // dim 효과를 숨김
 });
+document.getElementById('dim2').addEventListener('click', function () {
+    this.style.display = 'none';  // dim 효과를 숨김
+});
 
 
 // 랜덤캡슐 이미지 
@@ -101,15 +104,16 @@ let overlay = document.querySelector('.overlay');
 let recycle = document.querySelector('.recyclepopup');
 
 document.querySelector('.capcase').addEventListener('click', function () {
-    overlay.style.display = 'block'
+    overlay.style.display = 'block';
     recycle.style.display = 'block';
 });
 
-recycle.addEventListener('click', function() {
+
+recycle.addEventListener('click', function () {
     window.location.href = 'https://www.nespresso.com/kr/ko/made-with-care';
 });
 
-overlay.addEventListener('click', function() {
+overlay.addEventListener('click', function () {
     overlay.style.display = 'none';
     recycle.style.display = 'none';
 });
