@@ -27,10 +27,6 @@ window.onload = () => {
 document.getElementById('dim').addEventListener('click', function () {
     this.style.display = 'none';  // dim 효과를 숨김
 });
-document.getElementById('dim2').addEventListener('click', function () {
-    this.style.display = 'none';  // dim 효과를 숨김
-});
-
 
 // 랜덤캡슐 이미지 
 
@@ -117,3 +113,26 @@ overlay.addEventListener('click', function () {
     overlay.style.display = 'none';
     recycle.style.display = 'none';
 });
+
+// 커피머신 상세페이지
+
+let overlay2 = document.querySelector('.overlay2');
+let coffeemachine = document.querySelectorAll('.machineclick');
+let coffeepopup = document.querySelector('.coffeepopup');
+
+coffeemachine.forEach(function (machine) {
+    machine.addEventListener('click', function () {
+        coffeemachine.forEach(function (e) {
+            overlay2.style.display = 'block';
+            coffeepopup.style.display = 'block';
+        });
+    });
+});
+
+overlay2.addEventListener('click', function () {
+    overlay2.style.display = 'none';
+    coffeepopup.style.display = 'none';
+});
+
+let scanbtn = document.querySelector('.scanbtn');
+let testbtn = document.querySelector('.testbtn');

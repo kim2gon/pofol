@@ -75,6 +75,14 @@ html {
 
 /* 캡슐 1 */
 
+.machine1 {
+    position: absolute;
+    left: 1013px;
+    top: 51px;
+    width: 402px;
+    height: 544px;
+}
+
 .cap1 {
     position: absolute;
     left: 1326px;
@@ -115,6 +123,14 @@ html {
 
 /* 캡슐2 */
 
+.machine2 {
+    position: absolute;
+    left: 808px;
+    top: 284px;
+    width: 415px;
+    height: 582px;
+}
+
 .cap2 {
     position: absolute;
     left: 1150px;
@@ -154,6 +170,14 @@ html {
 }
 
 /* 캡슐 3 */
+
+.machine3 {
+    position: absolute;
+    left: 35px;
+    top: 558px;
+    width: 478px;
+    height: 624px;
+}
 
 .cap3 {
     position: absolute;
@@ -431,7 +455,7 @@ html {
     height: 100%;
     display: none;
     background: rgba(0, 0, 0, 0.7);
-    z-index: 888;
+    z-index: 98;
 }
 
 .recyclepopup {
@@ -440,7 +464,7 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
-    z-index: 999;
+    z-index: 99;
     cursor: pointer;
 }
 
@@ -1284,4 +1308,115 @@ html {
     100% {
         transform: translateX(0) translateY(0);
     }
+}
+
+
+/* 커피머신 팝업 */
+
+.coffeepopup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+}
+
+.scanbtn {
+    position: absolute;
+    left: 665px;
+    bottom: -20px;
+}
+
+.testbtn {
+    position: absolute;
+    left: 1000px;
+    bottom: -20px;
+}
+
+.btncolors {
+    position: absolute;
+}
+
+.pinkbtn1 {
+    position: absolute;
+    left: 700px;
+    bottom: 300px;
+}
+.pinkbtn2 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.whitebtn1 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.whitebtn2 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.redbtn1 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.redbtn2 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.blackbtn1 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.blackbtn2 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.yellowbtn1 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.yellowbtn2 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.bluebtn1 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.bluebtn2 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.greenbtn1 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.greenbtn2 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
 }
