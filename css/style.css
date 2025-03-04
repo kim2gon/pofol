@@ -1334,89 +1334,88 @@ html {
     z-index: 998;
 }
 
+.btnall {
+    position: absolute;
+    left: 700px;
+    bottom: 300px;
+}
+
 .scanbtn {
     position: absolute;
-    left: 665px;
-    bottom: -20px;
+    left: 663px;
+    bottom: -14px;
 }
 
 .testbtn {
     position: absolute;
-    left: 1000px;
-    bottom: -20px;
+    left: 1005px;
+    bottom: -14px;
 }
 
 .btncolors {
     position: absolute;
 }
 
-.pinkbtn1 {
+.colors {
+    opacity: 0;
+}
+
+.pinkbtn {
     position: absolute;
     left: 700px;
     bottom: 300px;
 }
-.pinkbtn2 {
+
+.whitebtn {
     position: absolute;
-    left: 0px;
-    bottom: 0px;
+    left: 806px;
+    bottom: 300px;
 }
-.whitebtn1 {
+
+.redbtn {
     position: absolute;
-    left: 0px;
-    bottom: 0px;
+    left: 912px;
+    bottom: 300px;
 }
-.whitebtn2 {
+
+.blackbtn {
     position: absolute;
-    left: 0px;
-    bottom: 0px;
+    left: 1017px;
+    bottom: 300px;
 }
-.redbtn1 {
+
+.yellowbtn {
     position: absolute;
-    left: 0px;
-    bottom: 0px;
+    left: 1123px;
+    bottom: 300px;
 }
-.redbtn2 {
+
+.bluebtn {
     position: absolute;
-    left: 0px;
-    bottom: 0px;
+    left: 1229px;
+    bottom: 300px;
 }
-.blackbtn1 {
+
+.greenbtn {
     position: absolute;
-    left: 0px;
-    bottom: 0px;
+    left: 1335px;
+    bottom: 300px;
 }
-.blackbtn2 {
+
+.machinebody {
     position: absolute;
-    left: 0px;
-    bottom: 0px;
+    left: 613px;
+    bottom: 400px;
 }
-.yellowbtn1 {
+
+.machinehead {
     position: absolute;
-    left: 0px;
-    bottom: 0px;
+    left: 738px;
+    bottom: 673px;
 }
-.yellowbtn2 {
+
+.coffeeglass {
     position: absolute;
-    left: 0px;
-    bottom: 0px;
-}
-.bluebtn1 {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-}
-.bluebtn2 {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-}
-.greenbtn1 {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-}
-.greenbtn2 {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
+    left: 1152px;
+    bottom: 471px;
 }
