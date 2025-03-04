@@ -136,13 +136,16 @@ overlay2.addEventListener('click', function () {
 
 let scanbtn = document.querySelector('.scanbtn');
 let testbtn = document.querySelector('.testbtn');
+let scanimg = document.querySelector('.scanimg');
 
 scanbtn.addEventListener('click', function () {
     if (scanbtn.style.opacity == 1) {
         scanbtn.style.opacity = 0;
         testbtn.style.opacity = 1;
+        scanimg.style.display = 'block';
     } else {
         scanbtn.style.opacity = 1;
+        scanimg.style.display = 'none';
     };
 });
 
@@ -150,12 +153,15 @@ testbtn.addEventListener('click', function () {
     if (testbtn.style.opacity == 1) {
         testbtn.style.opacity = 0;
         scanbtn.style.opacity = 1;
+        scanimg.style.display = 'none';
     } else {
         testbtn.style.opacity = 1;
     };
 });
 
 let btncolors = document.querySelectorAll('#colors');
+
+/*
 let pinkbtn = document.querySelector('.pinkbtn');
 let whitebtn = document.querySelector('.whitebtn');
 let redbtn = document.querySelector('.redbtn');
@@ -163,6 +169,7 @@ let blackbtn = document.querySelector('.blackbtn');
 let yellowbtn = document.querySelector('.yellowbtn');
 let bluebtn = document.querySelector('.bluebtn');
 let greenbtn = document.querySelector('.greenbtn');
+*/
 
 btncolors.forEach(function (colors) {
     colors.addEventListener('click', function () {

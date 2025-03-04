@@ -1315,9 +1315,10 @@ html {
 
 .coffeepopup {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom : 0;
+    left: 0;
+    top: 0;
+    right: 0;
     display: none;
     z-index: 999;
     cursor: pointer;
@@ -1325,7 +1326,7 @@ html {
 
 .overlay2 {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -1334,26 +1335,96 @@ html {
     z-index: 998;
 }
 
+.backgroundglass {
+    position: absolute;
+    left: 0;
+    bottom : 0;
+    z-index: 9989;
+}
+
+.backgroundimg {
+    position: absolute;
+    left: 0;
+    bottom : 0;
+    z-index: 9990;
+}
+
+.backgroundunder {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 9991;
+}
+
+.leftglass {
+    position: absolute;
+    left: 0;
+    bottom : 0;
+    z-index: 9992;
+}
+
+.rightglass {
+    position: absolute;
+    right: 0;
+    bottom : 0;
+    z-index: 9992;
+}
+
+.side {
+    position: absolute;
+    left: -12px;
+    bottom: 252px;
+    z-index: 9993;
+}
+
+.sideunder {
+    position: absolute;
+    left: -11px;
+    bottom: 252px;
+    z-index: 9994;
+}
+
+.machinebuttons {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 9995;
+}
+
 .btnall {
     position: absolute;
     left: 700px;
     bottom: 300px;
+    z-index: 9996;
 }
 
 .scanbtn {
     position: absolute;
     left: 663px;
     bottom: -14px;
+    z-index: 9997;
+}
+
+.scanimg {
+    position: absolute;
+    bottom: 379px;
+    left: 340px;
+    display: none;
+    z-index: 9992;
 }
 
 .testbtn {
     position: absolute;
     left: 1005px;
     bottom: -14px;
+    z-index: 9997;
 }
 
 .btncolors {
     position: absolute;
+    z-index: 9998;
+    left: 0;
+    bottom: 0;
 }
 
 .colors {
@@ -1406,16 +1477,19 @@ html {
     position: absolute;
     left: 613px;
     bottom: 400px;
+    z-index: 9991;
 }
 
 .machinehead {
     position: absolute;
     left: 738px;
     bottom: 673px;
+    z-index: 9991;
 }
 
 .coffeeglass {
     position: absolute;
     left: 1152px;
     bottom: 471px;
+    z-index: 9991;
 }
