@@ -1313,15 +1313,18 @@ html {
 
 /* 커피머신 팝업 */
 
+
 .coffeepopup {
     position: absolute;
-    bottom : 0;
-    left: 0;
-    top: 0;
-    right: 0;
+    width: 1920px;
+    height: 1080px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
     display: none;
     z-index: 999;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .overlay2 {
@@ -1517,20 +1520,33 @@ html {
 }
 
 .coffeeshot {
+    width: 100%;
+    height: 100%;
     position: absolute;
     left: 1152px;
     bottom: 471px;
     z-index: 9991;
+    overflow: hidden;
+}
+
+.clippath {
+    display: none;
+    bottom: 6px;
+    overflow: hidden;
 }
 
 .coffee {
     position: absolute;
     left: 0;
-    bottom: 6px;
+    bottom: 0px;
     /* -35~6px */
     width: 65px;
     height: 50px;
+    max-width: 65px;
+    max-height: 50px;
     background-color: #1b0d0d;
+    clip-path: url(#coffeeshape);
+    overflow: hidden;
 }
 
 .crema {
