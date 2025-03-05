@@ -175,6 +175,13 @@ btncolors.forEach(function (colors) {
             e.classList.remove('colors');
         });
         colors.classList.add('colors');
+        console.log(this);
+        /*
+            this getAttribute class가져와서
+            class이름이 whitebtn 이면 뚜껑을 white.png
+
+            switch case문
+        */
     });
 });
 
