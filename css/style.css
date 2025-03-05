@@ -1487,9 +1487,62 @@ html {
     z-index: 9991;
 }
 
-.coffeeglass {
+.headjoint {
+    position: absolute;
+    left: 738px;
+    bottom: 673px;
+    z-index: 9991;
+}
+
+.machinepart1 {
+    position: absolute;
+    left: 738px;
+    bottom: 673px;
+    z-index: 9991;
+}
+
+.machinepart2 {
+    position: absolute;
+    left: 1005px;
+    bottom: 616px;
+    z-index: 9991;
+    transform: rotateZ(33deg);
+}
+
+.machinepart3 {
+    position: absolute;
+    left: 738px;
+    bottom: 673px;
+    z-index: 9991;
+}
+
+.coffeeshot {
     position: absolute;
     left: 1152px;
     bottom: 471px;
     z-index: 9991;
+}
+
+.coffee {
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    /* -35~6px */
+    width: 65px;
+    height: 50px;
+    background-color: #1b0d0d;
+}
+
+.crema {
+    position: absolute;
+    left: 0px;
+    bottom: 6px;
+    /* 6~45px */
+    opacity: 0;
+}
+
+.coffeeglass {
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }

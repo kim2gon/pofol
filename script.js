@@ -160,8 +160,7 @@ testbtn.addEventListener('click', function () {
 });
 
 let btncolors = document.querySelectorAll('#colors');
-
-/*
+let head = document.querySelector('.machinehead');
 let pinkbtn = document.querySelector('.pinkbtn');
 let whitebtn = document.querySelector('.whitebtn');
 let redbtn = document.querySelector('.redbtn');
@@ -169,7 +168,6 @@ let blackbtn = document.querySelector('.blackbtn');
 let yellowbtn = document.querySelector('.yellowbtn');
 let bluebtn = document.querySelector('.bluebtn');
 let greenbtn = document.querySelector('.greenbtn');
-*/
 
 btncolors.forEach(function (colors) {
     colors.addEventListener('click', function () {
@@ -180,22 +178,8 @@ btncolors.forEach(function (colors) {
     });
 });
 
-/*
-pinkbtn.addEventListener('click', function () {
-    if (pinkbtn.style.opacity == 1) {
-        pinkbtn.style.opacity = 0;
-        btncolors.style.opacity = 1;
-    } else {
-        pinkbtn.style.opacity = 1;
-    };
-});
-
-whitebtn.addEventListener('click', function () {
-    if (whitebtn.style.opacity == 1) {
-        whitebtn.style.opacity = 0;
-        btncolors.style.opacity = 1;
-    } else {
-        whitebtn.style.opacity = 1;
-    };
-});
-*/
+// if (pinkbtn.style.opacity == 0) {
+    
+// } else {
+//     pinkbtn.style.opacity = 1;
+// };
