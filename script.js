@@ -192,7 +192,7 @@ testbtn.addEventListener('click', function () {
 });
 
 let btncolors = document.querySelectorAll('#colors');
-let head = document.querySelector('.machinehead');
+let head = document.querySelector('.machinehead img');
 // let pinkbtn = document.querySelector('.pinkbtn');
 // let whitebtn = document.querySelector('.whitebtn');
 // let redbtn = document.querySelector('.redbtn');
@@ -209,11 +209,16 @@ btncolors.forEach(function (colors) {
         colors.classList.add('colors');
         console.log(this);
         console.log(this.getAttribute('class'));
-        switch(this.getAttribute('class')) {
-            case 'pinkbtn colors':
-                head.src = 'PNG/machine/pinkhead.png'; 
-            break;
+
+        if(this.getAttribute('class')=== 'pinkbtn colors'){
+            console.log('pink!!');
+            head.src = 'PNG/machine/pinkhead.png'; 
         }
+        // switch(this.getAttribute('class')) {
+        //     case 'pinkbtn colors':
+        //         head.src = 'PNG/machine/pinkhead.png'; 
+        //     break;
+        // }
         /*
             this getAttribute class가져와서
             class이름이 whitebtn 이면 뚜껑을 white.png
