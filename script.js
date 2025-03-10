@@ -114,6 +114,40 @@ overlay.addEventListener('click', function () {
     recycle.style.display = 'none';
 });
 
+capchange = document.querySelectorAll('#capchange');
+capcolor = document.querySelectorAll('#capcolor');
+capclicked = document.querySelectorAll('#clicked');
+
+capclicked.forEach(function(click) {
+            click.addEventListener('click', function () {
+                capclicked.forEach(function (e) {
+            e.classList.remove('clicked');
+        });
+    });
+});
+
+capchange.forEach(function(i){
+    console.log(i.getAttribute('id'))
+})
+
+capcolor.forEach(function(change) {
+    change.addEventListener('click', function () {
+        console.log(this);
+        console.log(this.getAttribute('class'));
+        switch(this.getAttribute('class')) {
+            case 'redcap':
+                change.src = 'PNG/capsulered.png'; 
+            break;
+        }
+    })
+})
+
+// switch(this.getAttribute('class')) {
+//     case 'bluecap':
+//         capchange.src = 'PNG/capsule7.png'; 
+//     break;
+// }
+
 // 커피머신 상세페이지
 
 let overlay2 = document.querySelector('.overlay2');
@@ -122,10 +156,8 @@ let coffeepopup = document.querySelector('.coffeepopup');
 
 coffeemachine.forEach(function (machine) {
     machine.addEventListener('click', function () {
-        coffeemachine.forEach(function (e) {
-            overlay2.style.display = 'block';
-            coffeepopup.style.display = 'block';
-        });
+        overlay2.style.display = 'block';
+        coffeepopup.style.display = 'block';
     });
 });
 
@@ -161,13 +193,13 @@ testbtn.addEventListener('click', function () {
 
 let btncolors = document.querySelectorAll('#colors');
 let head = document.querySelector('.machinehead');
-let pinkbtn = document.querySelector('.pinkbtn');
-let whitebtn = document.querySelector('.whitebtn');
-let redbtn = document.querySelector('.redbtn');
-let blackbtn = document.querySelector('.blackbtn');
-let yellowbtn = document.querySelector('.yellowbtn');
-let bluebtn = document.querySelector('.bluebtn');
-let greenbtn = document.querySelector('.greenbtn');
+// let pinkbtn = document.querySelector('.pinkbtn');
+// let whitebtn = document.querySelector('.whitebtn');
+// let redbtn = document.querySelector('.redbtn');
+// let blackbtn = document.querySelector('.blackbtn');
+// let yellowbtn = document.querySelector('.yellowbtn');
+// let bluebtn = document.querySelector('.bluebtn');
+// let greenbtn = document.querySelector('.greenbtn');
 
 btncolors.forEach(function (colors) {
     colors.addEventListener('click', function () {
@@ -176,6 +208,12 @@ btncolors.forEach(function (colors) {
         });
         colors.classList.add('colors');
         console.log(this);
+        console.log(this.getAttribute('class'));
+        switch(this.getAttribute('class')) {
+            case 'pinkbtn colors':
+                head.src = 'PNG/machine/pinkhead.png'; 
+            break;
+        }
         /*
             this getAttribute class가져와서
             class이름이 whitebtn 이면 뚜껑을 white.png
