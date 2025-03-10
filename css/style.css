@@ -815,10 +815,6 @@ html {
     bottom: 1812px;
 }
 
-.clicked {
-    opacity: 1;
-}
-
 .redchoice {
     position: absolute;
     left: 56px;
@@ -827,7 +823,8 @@ html {
 }
 
 .redchoice:hover {
-    opacity: 1;
+    opacity: 1 !important;
+    transition: opacity 0.3s ease;
 }
 
 .pinkchoice {
@@ -837,24 +834,21 @@ html {
     opacity: 0;
 }
 
-/* .redchoice:hover {
-    opacity: 1;
+.pinkchoice:hover {
+    opacity: 1 !important;
+    transition: opacity 0.3s ease;
 }
-.redchoice:hover {
-    opacity: 1;
-}
-.redchoice:hover {
-    opacity: 1;
-}
-.redchoice:hover {
-    opacity: 1;
-} */
 
 .bluechoice {
     position: absolute;
     left: 221px;
     bottom: 1707px;
     opacity: 0;
+}
+
+.bluechoice:hover {
+    opacity: 1 !important;
+    transition: opacity 0.3s ease;
 }
 
 .greenchoice {
@@ -864,11 +858,21 @@ html {
     opacity: 0;
 }
 
+.greenchoice:hover {
+    opacity: 1 !important;
+    transition: opacity 0.3s ease;
+}
+
 .brownchoice {
     position: absolute;
     left: 386px;
     bottom: 1801px;
     opacity: 0;
+}
+
+.brownchoice:hover {
+    opacity: 1 !important;
+    transition: opacity 0.3s ease;
 }
 
 .machine {
