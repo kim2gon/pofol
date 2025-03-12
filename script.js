@@ -129,7 +129,7 @@ coffeemachine.forEach(function (machine) {
     });
 });
 
-overlay2.addEventListener('click', function () {
+document.querySelector('.cancel').addEventListener('click', function () {
     overlay2.style.display = 'none';
     coffeepopup.style.display = 'none';
 });
@@ -161,6 +161,8 @@ testbtn.addEventListener('click', function () {
 
 let btncolors = document.querySelectorAll('#colors');
 let head = document.querySelector('.machinehead');
+
+/*
 let pinkbtn = document.querySelector('.pinkbtn');
 let whitebtn = document.querySelector('.whitebtn');
 let redbtn = document.querySelector('.redbtn');
@@ -168,6 +170,7 @@ let blackbtn = document.querySelector('.blackbtn');
 let yellowbtn = document.querySelector('.yellowbtn');
 let bluebtn = document.querySelector('.bluebtn');
 let greenbtn = document.querySelector('.greenbtn');
+*/
 
 btncolors.forEach(function (colors) {
     colors.addEventListener('click', function () {
@@ -176,12 +179,29 @@ btncolors.forEach(function (colors) {
         });
         colors.classList.add('colors');
         console.log(this);
-        /*
-            this getAttribute class가져와서
-            class이름이 whitebtn 이면 뚜껑을 white.png
-
-            switch case문
-        */
+        switch(this.getAttribute('class')) {
+            case 'pinkbtn colors':
+            head.src = 'PNG/machine/pinkhead.png';
+            break;
+            case 'whitebtn colors':
+            head.src = 'PNG/machine/whitehead.png';
+            break;
+            case 'redbtn colors':
+            head.src = 'PNG/machine/redhead.png';
+            break;
+            case 'blackbtn colors':
+            head.src = 'PNG/machine/blackhead.png';
+            break;
+            case 'yellowbtn colors':
+            head.src = 'PNG/machine/yellowhead.png';
+            break;
+            case 'bluebtn colors':
+            head.src = 'PNG/machine/bluehead.png';
+            break;
+            case 'greenbtn colors':
+            head.src = 'PNG/machine/greenhead.png';
+            break;
+        }
     });
 });
 

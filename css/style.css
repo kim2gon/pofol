@@ -1323,7 +1323,6 @@ html {
     transform: translateX(-50%);
     display: none;
     z-index: 999;
-    cursor: pointer;
     overflow: hidden;
 }
 
@@ -1341,14 +1340,14 @@ html {
 .backgroundglass {
     position: absolute;
     left: 0;
-    bottom : 0;
+    bottom: 0;
     z-index: 9989;
 }
 
 .backgroundimg {
     position: absolute;
     left: 0;
-    bottom : 0;
+    bottom: 0;
     z-index: 9990;
 }
 
@@ -1362,15 +1361,23 @@ html {
 .leftglass {
     position: absolute;
     left: 0;
-    bottom : 0;
+    bottom: 0;
     z-index: 9992;
 }
 
 .rightglass {
     position: absolute;
     right: 0;
-    bottom : 0;
+    bottom: 0;
     z-index: 9992;
+}
+
+.cancel {
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    cursor: pointer;
+    z-index: 9994;
 }
 
 .side {
@@ -1487,36 +1494,40 @@ html {
     position: absolute;
     left: 738px;
     bottom: 673px;
-    z-index: 9991;
+    /* 862~673px */
+    z-index: 9992;
 }
 
 .headjoint {
     position: absolute;
-    left: 738px;
-    bottom: 673px;
+    left: 850px;
+    /* 850~772px */
+    bottom: 960px;
     z-index: 9991;
 }
 
 .machinepart1 {
     position: absolute;
-    left: 738px;
-    bottom: 673px;
-    z-index: 9991;
+    left: 767px;
+    bottom: 672px;
+    z-index: 9990;
+    display: none;
 }
 
 .machinepart2 {
     position: absolute;
     left: 1005px;
     bottom: 616px;
-    z-index: 9991;
+    z-index: 9990;
     transform: rotateZ(33deg);
+    display: none;
 }
 
 .machinepart3 {
     position: absolute;
-    left: 738px;
-    bottom: 673px;
-    z-index: 9991;
+    left: 1040px;
+    bottom: 672px;
+    z-index: 9990;
 }
 
 .coffeeshot {
