@@ -785,6 +785,96 @@ html {
     bottom: 0;
 }
 
+.redcap {
+    position: absolute;
+    left: 68px;
+    bottom: 1622px;
+}
+
+.pinkcap {
+    position: absolute;
+    left: 150px;
+    bottom: 1670px;
+}
+
+.bluecap {
+    position: absolute;
+    left: 232px;
+    bottom: 1718px;
+}
+
+.greencap {
+    position: absolute;
+    left: 315px;
+    bottom: 1765px;
+}
+
+.browncap {
+    position: absolute;
+    left: 397px;
+    bottom: 1812px;
+}
+
+.redchoice {
+    position: absolute;
+    left: 56px;
+    bottom: 1611px;
+    opacity: 0;
+}
+
+.redchoice:hover {
+    opacity: 1 !important;
+    transition: opacity 0.3s ease;
+}
+
+.pinkchoice {
+    position: absolute;
+    left: 139px;
+    bottom: 1659px;
+    opacity: 0;
+}
+
+.pinkchoice:hover {
+    opacity: 1 !important;
+    transition: opacity 0.3s ease;
+}
+
+.bluechoice {
+    position: absolute;
+    left: 221px;
+    bottom: 1707px;
+    opacity: 0;
+}
+
+.bluechoice:hover {
+    opacity: 1 !important;
+    transition: opacity 0.3s ease;
+}
+
+.greenchoice {
+    position: absolute;
+    left: 304px;
+    bottom: 1754px;
+    opacity: 0;
+}
+
+.greenchoice:hover {
+    opacity: 1 !important;
+    transition: opacity 0.3s ease;
+}
+
+.brownchoice {
+    position: absolute;
+    left: 386px;
+    bottom: 1801px;
+    opacity: 0;
+}
+
+.brownchoice:hover {
+    opacity: 1 !important;
+    transition: opacity 0.3s ease;
+}
+
 .machine {
     position: absolute;
     left: 466px;
