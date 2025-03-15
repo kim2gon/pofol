@@ -1231,14 +1231,16 @@ html {
 
 .capsule43 {
     position: absolute;
-    left: 400px;
-    bottom: 495px;
+    left: 409px;
+    bottom: 530px;
+    transform: rotateZ(112deg);
 }
 
 .capsule44 {
     position: absolute;
-    left: 500px;
-    bottom: 545px;
+    left: 527px;
+    bottom: 436px;
+    transform: rotateZ(-70deg);
 }
 
 @keyframes moveslider10 {
