@@ -114,20 +114,59 @@ overlay.addEventListener('click', function () {
     recycle.style.display = 'none';
 });
 
-capclicked = document.querySelectorAll('#clicked');
-capchange = document.querySelectorAll('#capchange');
+let capclicked = document.querySelectorAll('#clicked');
+let capchange = document.querySelectorAll('#capchange img');
+let capchange2 = document.querySelectorAll('#capchange2 img');
 
-capclicked.forEach(function(clicked) {
-        clicked.addEventListener('click', function () {
-            capclicked.forEach(function (cap) {
-        cap.style.opacity = 0;
+capclicked.forEach(function (clicked) {
+    clicked.addEventListener('click', function () {
+        capclicked.forEach(function (cap) {
+            cap.style.opacity = 0;
         });
         this.style.opacity = 1;
-        console.log(this.getAttribute('class'));
-        switch(this.getAttribute('class')) {
-            case 'redchoice':
-                change.src = 'PNG/capsulered.png'; 
-            break;
+        switch (true) {
+            case this.classList.contains('redchoice'):
+                capchange.forEach(function (img) {
+                    img.src = 'PNG/capsulered.png';
+                });
+                capchange2.forEach(function (img) {
+                    img.src = 'PNG/capsulered2.png';
+                });
+                break;
+            case this.classList.contains('pinkchoice'):
+                capchange.forEach(function (img) {
+                    img.src = 'PNG/capsulepink.png';
+                });
+                capchange2.forEach(function (img) {
+                    img.src = 'PNG/capsulepink2.png';
+                });
+                break;
+            case this.classList.contains('bluechoice'):
+                capchange.forEach(function (img) {
+                    img.src = 'PNG/capsuleblue.png';
+                });
+                capchange2.forEach(function (img) {
+                    img.src = 'PNG/capsuleblue2.png';
+                });
+                break;
+            case this.classList.contains('greenchoice'):
+                capchange.forEach(function (img) {
+                    img.src = 'PNG/capsulegreen.png';
+                });
+                capchange2.forEach(function (img) {
+                    img.src = 'PNG/capsulegreen2.png';
+                });
+                break;
+            case this.classList.contains('brownchoice'):
+                capchange.forEach(function (img) {
+                    img.src = 'PNG/capsulebrown.png';
+                });
+                capchange2.forEach(function (img) {
+                    img.src = 'PNG/capsulebrown2.png';
+                });
+                break;
+            default:
+                break;
         }
     });
 });
@@ -177,54 +216,129 @@ testbtn.addEventListener('click', function () {
 
 let btncolors = document.querySelectorAll('#colors');
 let head = document.querySelector('.machinehead img');
+let joint = document.querySelector('.headjoint');
 
+let currentAnimation = null;  // 현재 진행 중인 애니메이션을 추적할 변수
+
+// 각 버튼에 클릭 이벤트를 추가합니다.
 btncolors.forEach(function (colors) {
     colors.addEventListener('click', function () {
+        // 애니메이션이 진행 중이라면 중단
+        if (currentAnimation) {
+            currentAnimation.cancel(); // 기존 애니메이션 중단
+        }
+
+        // 선택된 버튼에 색상 클래스를 추가하고 나머지 버튼에서는 제거
         btncolors.forEach(function (e) {
             e.classList.remove('colors');
         });
         colors.classList.add('colors');
-        console.log(this);
-        console.log(this.getAttribute('class'));
 
-        // if(this.getAttribute('class')=== 'pinkbtn colors'){
-        //     console.log('pink!!');
-        //     head.src = 'PNG/machine/pinkhead.png'; 
-        // }
-        switch(this.getAttribute('class')) {
-            case 'pinkbtn colors':
-                head.src = 'PNG/machine/pinkhead.png'; 
-            break;
-            case 'whitebtn colors':
-            head.src = 'PNG/machine/whitehead.png';
-            break;
-            case 'redbtn colors':
-            head.src = 'PNG/machine/redhead.png';
-            break;
-            case 'blackbtn colors':
-            head.src = 'PNG/machine/blackhead.png';
-            break;
-            case 'yellowbtn colors':
-            head.src = 'PNG/machine/yellowhead.png';
-            break;
-            case 'bluebtn colors':
-            head.src = 'PNG/machine/bluehead.png';
-            break;
-            case 'greenbtn colors':
-            head.src = 'PNG/machine/greenhead.png';
-            break;
-        }
-        /*
-            this getAttribute class가져와서
-            class이름이 whitebtn 이면 뚜껑을 white.png
-
-            switch case문
-        */
+        // 클릭된 버튼에 해당하는 애니메이션 실행
+        jointmove1();
     });
 });
 
-// if (pinkbtn.style.opacity == 0) {
-    
-// } else {
-//     pinkbtn.style.opacity = 1;
-// };
+function jointmove1() {
+    currentAnimation = joint.animate([
+        { transform: 'translate(0, 0)' },             // 초기 위치
+        { transform: 'translate(0, 287px)' }          // 287px 내려옴
+    ], {
+        duration: 5000,
+        easing: 'ease',
+        fill: 'forwards'
+    }).onfinish = function () {
+        jointmove2(); // 다음 실행
+    };
+}
+
+function jointmove2() {
+    currentAnimation = joint.animate([
+        { transform: 'translate(0, 287px)' },         // 내려온 상태에서 시작
+        { transform: 'translate(0, 0)' }             // 287px 올라감
+    ], {
+        duration: 5000,
+        easing: 'ease',
+        fill: 'forwards'
+    }).onfinish = function () {
+        jointmove3(); // 다음 실행
+    };
+
+    currentAnimation = head.animate([
+        { transform: 'translate(0, 0)' },             // 처음 위치에서 시작
+        { transform: 'translate(0, -287px)' }         // 287px 올라감
+    ], {
+        duration: 5000,
+        easing: 'ease',
+        fill: 'forwards'
+    });
+}
+
+function jointmove3() {
+    // head.src 변경은 jointmove3가 시작되기 전에 처리
+    const activeButton = document.querySelector('.colors');
+    switch (activeButton.classList[0]) {
+        case 'pinkbtn':
+            head.src = 'PNG/machine/pinkhead.png';
+            break;
+        case 'whitebtn':
+            head.src = 'PNG/machine/whitehead.png';
+            break;
+        case 'redbtn':
+            head.src = 'PNG/machine/redhead.png';
+            break;
+        case 'blackbtn':
+            head.src = 'PNG/machine/blackhead.png';
+            break;
+        case 'yellowbtn':
+            head.src = 'PNG/machine/yellowhead.png';
+            break;
+        case 'bluebtn':
+            head.src = 'PNG/machine/bluehead.png';
+            break;
+        case 'greenbtn':
+            head.src = 'PNG/machine/greenhead.png';
+            break;
+        default:
+            break;
+    }
+
+    currentAnimation = joint.animate([
+        { transform: 'translate(0, 0)' },             // 올라간 상태에서 시작
+        { transform: 'translate(0, 287px)' }          // 다시 287px 내려옴
+    ], {
+        duration: 5000,
+        easing: 'ease',
+        fill: 'forwards'
+    }).onfinish = function () {
+        jointmove4(); // 다음 실행
+    };
+
+    currentAnimation = head.animate([
+        { transform: 'translate(0, -287px)' },         // head가 올라간 상태에서 시작
+        { transform: 'translate(0, 0)' }               // head도 내려옴
+    ], {
+        duration: 5000,
+        easing: 'ease',
+        fill: 'forwards'
+    });
+}
+
+function jointmove4() {
+    currentAnimation = joint.animate([
+        { transform: 'translate(0, 287px)' },         // 내려온 상태에서 시작
+        { transform: 'translate(0, 0)' }             // 원래 위치로 올라감
+    ], {
+        duration: 5000,
+        easing: 'ease',
+        fill: 'forwards'
+    });
+
+    currentAnimation = head.animate([
+        { transform: 'translate(0, -287px)' },         // 287px 올라간 상태에서 시작
+        { transform: 'translate(0, 0)' }               // head는 그대로 내려옴
+    ], {
+        duration: 0,
+        fill: 'forwards'
+    });
+}

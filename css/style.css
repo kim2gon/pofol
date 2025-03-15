@@ -1210,9 +1210,15 @@ html {
     }
 }
 
-.machinearm {
+.machinearm1 {
     position: absolute;
-    left: 341px;
+    left: 403px;
+    bottom: 461px;
+}
+
+.machinearm2 {
+    position: absolute;
+    left: 378px;
     bottom: 333px;
 }
 
@@ -1221,6 +1227,18 @@ html {
     left: 615px;
     bottom: 545px;
     animation: moveslider10 5s linear infinite;
+}
+
+.capsule43 {
+    position: absolute;
+    left: 400px;
+    bottom: 495px;
+}
+
+.capsule44 {
+    position: absolute;
+    left: 500px;
+    bottom: 545px;
 }
 
 @keyframes moveslider10 {
@@ -1584,15 +1602,13 @@ html {
     position: absolute;
     left: 738px;
     bottom: 673px;
-    /* 862~673px */
     z-index: 9992;
 }
 
 .headjoint {
     position: absolute;
     left: 850px;
-    /* 850~772px */
-    bottom: 960px;
+    bottom: 1059px;
     z-index: 9991;
 }
 
