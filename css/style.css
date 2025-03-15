@@ -1484,10 +1484,13 @@ html {
 
 .cancel {
     position: absolute;
-    right: 100px;
-    top: 100px;
+    right: 2%;
+    top: 2%;
+    width: 100px;
+    height: 100px;
     cursor: pointer;
-    z-index: 9994;
+    z-index: 9999;
+    display: none;
 }
 
 .side {
@@ -1533,11 +1536,27 @@ html {
     z-index: 9992;
 }
 
+.scanning {
+    position: absolute;
+    bottom: 170px;
+    left: 770px;
+    display: none;
+    z-index: 9999;
+}
+
 .testbtn {
     position: absolute;
     left: 1005px;
     bottom: -14px;
     z-index: 9997;
+}
+
+.testing {
+    position: absolute;
+    bottom: 170px;
+    left: 800px;
+    display: none;
+    z-index: 9999;
 }
 
 .btncolors {

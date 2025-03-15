@@ -176,42 +176,58 @@ capclicked.forEach(function (clicked) {
 let overlay2 = document.querySelector('.overlay2');
 let coffeemachine = document.querySelectorAll('.machineclick');
 let coffeepopup = document.querySelector('.coffeepopup');
+let cancel = document.querySelector('.cancel');
 
 coffeemachine.forEach(function (machine) {
     machine.addEventListener('click', function () {
         overlay2.style.display = 'block';
         coffeepopup.style.display = 'block';
+        cancel.style.display = 'block';
     });
 });
 
-document.querySelector('.cancel').addEventListener('click', function () {
+cancel.addEventListener('click', function () {
     overlay2.style.display = 'none';
     coffeepopup.style.display = 'none';
+    cancel.style.display = 'none';
 });
 
 let scanbtn = document.querySelector('.scanbtn');
 let testbtn = document.querySelector('.testbtn');
 let scanimg = document.querySelector('.scanimg');
+let scanning = document.querySelector('.scanning');
+let testing = document.querySelector('.testing');
+
+let isImg = true;
+let isnotImg = true;
 
 scanbtn.addEventListener('click', function () {
-    if (scanbtn.style.opacity == 1) {
+    if (isImg) {
         scanbtn.style.opacity = 0;
         testbtn.style.opacity = 1;
         scanimg.style.display = 'block';
+        scanning.style.display = 'block';
+        testing.style.display = 'none';
     } else {
         scanbtn.style.opacity = 1;
         scanimg.style.display = 'none';
+        scanning.style.display = 'none';
     };
+    !isImg;
 });
 
 testbtn.addEventListener('click', function () {
-    if (testbtn.style.opacity == 1) {
+    if (isImg) {
         testbtn.style.opacity = 0;
         scanbtn.style.opacity = 1;
         scanimg.style.display = 'none';
+        scanning.style.display = 'none';
+        testing.style.display = 'block';
     } else {
         testbtn.style.opacity = 1;
+        testing.style.display = 'none';
     };
+    !isImg;
 });
 
 let btncolors = document.querySelectorAll('#colors');
@@ -244,7 +260,7 @@ function jointmove1() {
         { transform: 'translate(0, 0)' },             // 초기 위치
         { transform: 'translate(0, 287px)' }          // 287px 내려옴
     ], {
-        duration: 5000,
+        duration: 1500,
         easing: 'ease',
         fill: 'forwards'
     }).onfinish = function () {
@@ -257,7 +273,7 @@ function jointmove2() {
         { transform: 'translate(0, 287px)' },         // 내려온 상태에서 시작
         { transform: 'translate(0, 0)' }             // 287px 올라감
     ], {
-        duration: 5000,
+        duration: 1500,
         easing: 'ease',
         fill: 'forwards'
     }).onfinish = function () {
@@ -268,7 +284,7 @@ function jointmove2() {
         { transform: 'translate(0, 0)' },             // 처음 위치에서 시작
         { transform: 'translate(0, -287px)' }         // 287px 올라감
     ], {
-        duration: 5000,
+        duration: 1500,
         easing: 'ease',
         fill: 'forwards'
     });
@@ -307,7 +323,7 @@ function jointmove3() {
         { transform: 'translate(0, 0)' },             // 올라간 상태에서 시작
         { transform: 'translate(0, 287px)' }          // 다시 287px 내려옴
     ], {
-        duration: 5000,
+        duration: 1500,
         easing: 'ease',
         fill: 'forwards'
     }).onfinish = function () {
@@ -318,7 +334,7 @@ function jointmove3() {
         { transform: 'translate(0, -287px)' },         // head가 올라간 상태에서 시작
         { transform: 'translate(0, 0)' }               // head도 내려옴
     ], {
-        duration: 5000,
+        duration: 1500,
         easing: 'ease',
         fill: 'forwards'
     });
@@ -329,7 +345,7 @@ function jointmove4() {
         { transform: 'translate(0, 287px)' },         // 내려온 상태에서 시작
         { transform: 'translate(0, 0)' }             // 원래 위치로 올라감
     ], {
-        duration: 5000,
+        duration: 1500,
         easing: 'ease',
         fill: 'forwards'
     });
