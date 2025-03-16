@@ -96,6 +96,8 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(showRandomImage, 2000);
 });
 
+// 재활용 팝업
+
 let overlay = document.querySelector('.overlay');
 let recycle = document.querySelector('.recyclepopup');
 
@@ -112,6 +114,66 @@ recycle.addEventListener('click', function () {
 overlay.addEventListener('click', function () {
     overlay.style.display = 'none';
     recycle.style.display = 'none';
+});
+
+// 캡슐 팝업
+
+let overlay3 = document.querySelector('.overlay3');
+let capclick = document.querySelector('.capclick');
+let capsulepopup = document.querySelector('.capsulepopup');
+let capsulepopup2 = document.querySelector('.capsulepopup2');
+let cancel2 = document.querySelector('.cancel2');
+let cancel3 = document.querySelector('.cancel3');
+let backbtn = document.querySelector('.backbtn');
+let buybtn = document.querySelector('.buybtn');
+
+capclick.addEventListener('click', function () {
+    overlay3.style.display = 'block';
+    capsulepopup.style.display = 'block';
+    capsulepopup2.style.display = 'none';
+    cancel2.style.display = 'block';
+});
+
+capsulepopup.addEventListener('click', function () {
+    capsulepopup.style.display = 'none';
+    capsulepopup2.style.display = 'block';
+    cancel3.style.display = 'block';
+    cancel2.style.display = 'none';
+    backbtn.style.display = 'block'
+    buybtn.style.display = 'block'
+});
+
+backbtn.addEventListener('click', function () {
+    capsulepopup.style.display = 'block';
+    capsulepopup2.style.display = 'none';
+    cancel2.style.display = 'block';
+    cancel3.style.display = 'none';
+    backbtn.style.display = 'none'
+    buybtn.style.display = 'none'
+});
+
+buybtn.addEventListener('click', function () {
+    window.location.href = 'https://www.nespresso.com/kr/ko/order/capsules/vertuo';
+});
+
+cancel2.addEventListener('click', function () {
+    overlay3.style.display = 'none';
+    capsulepopup.style.display = 'none';
+    capsulepopup2.style.display = 'none';
+    cancel2.style.display = 'none';
+    cancel3.style.display = 'none';
+    backbtn.style.display = 'none'
+    buybtn.style.display = 'none'
+});
+
+cancel3.addEventListener('click', function () {
+    overlay3.style.display = 'none';
+    capsulepopup.style.display = 'none';
+    capsulepopup2.style.display = 'none';
+    cancel2.style.display = 'none';
+    cancel3.style.display = 'none';
+    backbtn.style.display = 'none'
+    buybtn.style.display = 'none'
 });
 
 let capclicked = document.querySelectorAll('#clicked');

@@ -887,6 +887,82 @@ html {
     bottom: 144px;
 }
 
+/* 캡슐 팝업 */
+
+.capsulepopup {
+    position: absolute;
+    width: 1200px;
+    height: 640px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    cursor: pointer;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.capsulepopup2 {
+    position: absolute;
+    width: 1200px;
+    height: 640px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.overlay3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+}
+
+.cancel2 {
+    position: absolute;
+    right: 96px;
+    top: 56px;
+    width: 70px;
+    cursor: pointer;
+    z-index: 9999;
+    display: none;
+}
+
+.cancel3 {
+    position: absolute;
+    right: 96px;
+    top: 56px;
+    width: 70px;
+    cursor: pointer;
+    z-index: 9999;
+    display: none;
+}
+
+.backbtn {
+    position: absolute;
+    left: 120px;
+    bottom: 75px;
+    width: 135px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.buybtn {
+    position: absolute;
+    left: 980px;
+    bottom: 75px;
+    width: 105px;
+    height: 35px;
+    cursor: pointer;
+}
+
 .con3 .caution {
     position: absolute;
     left: 795px;
