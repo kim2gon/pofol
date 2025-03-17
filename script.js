@@ -122,21 +122,25 @@ let overlay3 = document.querySelector('.overlay3');
 let capclick = document.querySelector('.capclick');
 let capsulepopup = document.querySelector('.capsulepopup');
 let capsulepopup2 = document.querySelector('.capsulepopup2');
+let capsuleclicks = document.querySelector('.capsuleclicks');
 let cancel2 = document.querySelector('.cancel2');
 let cancel3 = document.querySelector('.cancel3');
 let backbtn = document.querySelector('.backbtn');
 let buybtn = document.querySelector('.buybtn');
+let caphovers = document.querySelector('.caphovers');
 
 capclick.addEventListener('click', function () {
     overlay3.style.display = 'block';
     capsulepopup.style.display = 'block';
     capsulepopup2.style.display = 'none';
+    capsuleclicks.style.display = 'block';
     cancel2.style.display = 'block';
 });
 
-capsulepopup.addEventListener('click', function () {
+capsuleclicks.addEventListener('click', function () {
     capsulepopup.style.display = 'none';
     capsulepopup2.style.display = 'block';
+    capsuleclicks.style.display = 'none';
     cancel3.style.display = 'block';
     cancel2.style.display = 'none';
     backbtn.style.display = 'block'
@@ -146,6 +150,7 @@ capsulepopup.addEventListener('click', function () {
 backbtn.addEventListener('click', function () {
     capsulepopup.style.display = 'block';
     capsulepopup2.style.display = 'none';
+    capsuleclicks.style.display = 'block';
     cancel2.style.display = 'block';
     cancel3.style.display = 'none';
     backbtn.style.display = 'none'
@@ -159,18 +164,13 @@ buybtn.addEventListener('click', function () {
 cancel2.addEventListener('click', function () {
     overlay3.style.display = 'none';
     capsulepopup.style.display = 'none';
-    capsulepopup2.style.display = 'none';
+    capsuleclicks.style.display = 'none';
     cancel2.style.display = 'none';
-    cancel3.style.display = 'none';
-    backbtn.style.display = 'none'
-    buybtn.style.display = 'none'
 });
 
 cancel3.addEventListener('click', function () {
     overlay3.style.display = 'none';
-    capsulepopup.style.display = 'none';
     capsulepopup2.style.display = 'none';
-    cancel2.style.display = 'none';
     cancel3.style.display = 'none';
     backbtn.style.display = 'none'
     buybtn.style.display = 'none'
@@ -261,7 +261,6 @@ let scanning = document.querySelector('.scanning');
 let testing = document.querySelector('.testing');
 
 let isImg = true;
-let isnotImg = true;
 
 scanbtn.addEventListener('click', function () {
     if (isImg) {
@@ -270,12 +269,13 @@ scanbtn.addEventListener('click', function () {
         scanimg.style.display = 'block';
         scanning.style.display = 'block';
         testing.style.display = 'none';
+        isImg = false;
     } else {
         scanbtn.style.opacity = 1;
         scanimg.style.display = 'none';
         scanning.style.display = 'none';
+        isImg = true;
     };
-    !isImg;
 });
 
 testbtn.addEventListener('click', function () {
@@ -285,11 +285,12 @@ testbtn.addEventListener('click', function () {
         scanimg.style.display = 'none';
         scanning.style.display = 'none';
         testing.style.display = 'block';
+        isImg = false;
     } else {
         testbtn.style.opacity = 1;
         testing.style.display = 'none';
+        isImg = true
     };
-    !isImg;
 });
 
 let btncolors = document.querySelectorAll('#colors');

@@ -897,9 +897,392 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
-    cursor: pointer;
     z-index: 999;
     overflow: hidden;
+}
+
+.capsuleclicks {
+    position: absolute;
+    top: 54.5%;
+    left: 50.05%;
+    transform: translate(-50%, -50%);
+    display: none;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.caphovers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* display: none; */
+    cursor: pointer;
+    z-index: 999;
+}
+
+.caphover1 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 183px;
+    left: 109px;
+    width: 81px;
+    height: 82px;
+    background-color: red;
+}
+
+.caphover2 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 183px;
+    left: 1011px;
+    width: 81px;
+    height: 82px;
+    background-color: yellow;
+}
+
+.caphover3 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 266px;
+    left: 109px;
+    width: 81px;
+    height: 82px;
+    background-color: yellow;
+}
+
+.caphover4 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 183px;
+    left: 109px;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover5 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 183px;
+    left: 109px;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover6 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 183px;
+    left: 109px;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover7 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover8 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover9 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover10 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover11 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover12 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover13 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover14 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover15 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 349px;
+    left: 109px;
+    width: 81px;
+    height: 82px;
+    background-color: green;
+}
+
+.caphover16 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover17 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover18 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover19 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover20 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover21 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover22 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover23 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover24 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover25 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover26 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover27 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover28 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover29 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover30 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover31 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover32 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover33 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover34 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover35 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
+}
+
+.caphover36 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 81px;
+    height: 82px;
 }
 
 .capsulepopup2 {
