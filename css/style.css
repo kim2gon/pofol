@@ -903,20 +903,10 @@ html {
 
 .capsuleclicks {
     position: absolute;
-    top: 54.5%;
-    left: 50.05%;
-    transform: translate(-50%, -50%);
-    display: none;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 999;
-}
-
-.caphovers {
-    position: absolute;
     top: 0;
     left: 0;
     /* display: none; */
+    /* opacity: 0; */
     cursor: pointer;
     z-index: 999;
 }
@@ -929,7 +919,7 @@ html {
     left: 109px;
     width: 81px;
     height: 82px;
-    background-color: red;
+    opacity: 0;
 }
 
 .caphover2 {
@@ -940,7 +930,6 @@ html {
     left: 1011px;
     width: 81px;
     height: 82px;
-    background-color: yellow;
 }
 
 .caphover3 {
@@ -951,15 +940,14 @@ html {
     left: 109px;
     width: 81px;
     height: 82px;
-    background-color: yellow;
 }
 
 .caphover4 {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 183px;
-    left: 109px;
+    top: 266px;
+    left: 191px;
     width: 81px;
     height: 82px;
 }
@@ -968,8 +956,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 183px;
-    left: 109px;
+    top: 266px;
+    left: 273px;
     width: 81px;
     height: 82px;
 }
@@ -978,8 +966,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 183px;
-    left: 109px;
+    top: 266px;
+    left: 355px;
     width: 81px;
     height: 82px;
 }
@@ -988,8 +976,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 266px;
+    left: 437px;
     width: 81px;
     height: 82px;
 }
@@ -998,8 +986,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 266px;
+    left: 519px;
     width: 81px;
     height: 82px;
 }
@@ -1008,8 +996,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 266px;
+    left: 601px;
     width: 81px;
     height: 82px;
 }
@@ -1018,8 +1006,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 266px;
+    left: 683px;
     width: 81px;
     height: 82px;
 }
@@ -1028,8 +1016,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 266px;
+    left: 765px;
     width: 81px;
     height: 82px;
 }
@@ -1038,8 +1026,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 266px;
+    left: 847px;
     width: 81px;
     height: 82px;
 }
@@ -1048,8 +1036,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 266px;
+    left: 929px;
     width: 81px;
     height: 82px;
 }
@@ -1058,8 +1046,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 266px;
+    left: 1011px;
     width: 81px;
     height: 82px;
 }
@@ -1072,15 +1060,14 @@ html {
     left: 109px;
     width: 81px;
     height: 82px;
-    background-color: green;
 }
 
 .caphover16 {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 349px;
+    left: 191px;
     width: 81px;
     height: 82px;
 }
@@ -1089,8 +1076,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 349px;
+    left: 273px;
     width: 81px;
     height: 82px;
 }
@@ -1099,8 +1086,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 349px;
+    left: 355px;
     width: 81px;
     height: 82px;
 }
@@ -1109,8 +1096,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 349px;
+    left: 437px;
     width: 81px;
     height: 82px;
 }
@@ -1119,8 +1106,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 349px;
+    left: 519px;
     width: 81px;
     height: 82px;
 }
@@ -1129,8 +1116,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 349px;
+    left: 601px;
     width: 81px;
     height: 82px;
 }
@@ -1139,8 +1126,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 349px;
+    left: 683px;
     width: 81px;
     height: 82px;
 }
@@ -1149,8 +1136,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 349px;
+    left: 765px;
     width: 81px;
     height: 82px;
 }
@@ -1159,8 +1146,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 349px;
+    left: 847px;
     width: 81px;
     height: 82px;
 }
@@ -1169,8 +1156,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 349px;
+    left: 929px;
     width: 81px;
     height: 82px;
 }
@@ -1179,8 +1166,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 349px;
+    left: 1011px;
     width: 81px;
     height: 82px;
 }
@@ -1189,8 +1176,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 432px;
+    left: 191px;
     width: 81px;
     height: 82px;
 }
@@ -1199,8 +1186,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 432px;
+    left: 273px;
     width: 81px;
     height: 82px;
 }
@@ -1209,8 +1196,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 432px;
+    left: 355px;
     width: 81px;
     height: 82px;
 }
@@ -1219,8 +1206,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 432px;
+    left: 437px;
     width: 81px;
     height: 82px;
 }
@@ -1229,8 +1216,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 432px;
+    left: 519px;
     width: 81px;
     height: 82px;
 }
@@ -1239,8 +1226,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 432px;
+    left: 601px;
     width: 81px;
     height: 82px;
 }
@@ -1249,8 +1236,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 432px;
+    left: 683px;
     width: 81px;
     height: 82px;
 }
@@ -1259,8 +1246,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 432px;
+    left: 765px;
     width: 81px;
     height: 82px;
 }
@@ -1269,8 +1256,8 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 432px;
+    left: 847px;
     width: 81px;
     height: 82px;
 }
@@ -1279,11 +1266,192 @@ html {
     position: absolute;
     cursor: pointer;
     z-index: 999;
-    top: 0;
-    left: 0;
+    top: 432px;
+    left: 929px;
     width: 81px;
     height: 82px;
 }
+
+.caphover1:hover {
+    background: #000;
+    opacity: 0.5;
+}
+
+.caphover2:hover {
+    background: #ed6f6a;
+    opacity: 0.5;
+}
+
+.caphover3:hover {
+    background: #5c4028;
+    opacity: 0.5;
+}
+
+.caphover4:hover {
+    background: #e59e03;
+    opacity: 0.5;
+}
+
+.caphover5:hover {
+    background: #e07700;
+    opacity: 0.5;
+}
+
+.caphover6:hover {
+    background: #b09dcc;
+    opacity: 0.5;
+}
+
+.caphover7:hover {
+    background: #5b3395;
+    opacity: 0.5;
+}
+
+.caphover8:hover {
+    background: #1d2f62;
+    opacity: 0.5;
+}
+
+.caphover9:hover {
+    background: #273317;
+    opacity: 0.5;
+}
+
+.caphover10:hover {
+    background: #8edade;
+    opacity: 0.5;
+}
+
+.caphover11:hover {
+    background: #bd884a;
+    opacity: 0.5;
+}
+
+.caphover12:hover {
+    background: #9a5309;
+    opacity: 0.5;
+}
+
+.caphover13:hover {
+    background: #413020;
+    opacity: 0.5;
+}
+
+.caphover14:hover {
+    background: #1e1513;
+    opacity: 0.5;
+}
+
+.caphover15:hover {
+    background: #f07203;
+    opacity: 0.5;
+}
+
+.caphover16:hover {
+    background: #9c877d;
+    opacity: 0.5;
+}
+
+.caphover17:hover {
+    background: #0298ba;
+    opacity: 0.5;
+}
+
+.caphover18:hover {
+    background: #4c9ebd;
+    opacity: 0.5;
+}
+
+.caphover19:hover {
+    background: #824105;
+    opacity: 0.5;
+}
+
+.caphover20:hover {
+    background: #eadfc5;
+    opacity: 0.5;
+}
+
+.caphover21:hover {
+    background: #dca465;
+    opacity: 0.5;
+}
+
+.caphover22:hover {
+    background: #903d2d;
+    opacity: 0.5;
+}
+
+.caphover23:hover {
+    background: #925838;
+    opacity: 0.5;
+}
+
+.caphover24:hover {
+    background: #ffc806;
+    opacity: 0.5;
+}
+
+.caphover25:hover {
+    background: #b9333a;
+    opacity: 0.5;
+}
+
+.caphover26:hover {
+    background: #8a5062;
+    opacity: 0.5;
+}
+
+.caphover27:hover {
+    background: #abaaa6;
+    opacity: 0.5;
+}
+
+.caphover28:hover {
+    background: #514e47;
+    opacity: 0.5;
+}
+
+.caphover29:hover {
+    background: #440809;
+    opacity: 0.5;
+}
+
+.caphover30:hover {
+    background: #b88c84;
+    opacity: 0.5;
+}
+
+.caphover31:hover {
+    background: #e4c8aa;
+    opacity: 0.5;
+}
+
+.caphover32:hover {
+    background: #e28952;
+    opacity: 0.5;
+}
+
+.caphover33:hover {
+    background: #69942e;
+    opacity: 0.5;
+}
+
+.caphover34:hover {
+    background: #017295;
+    opacity: 0.5;
+}
+
+.caphover35:hover {
+    background: #186b3e;
+    opacity: 0.5;
+}
+
+.caphover36:hover {
+    background: #562b18;
+    opacity: 0.5;
+}
+
 
 .capsulepopup2 {
     position: absolute;
@@ -2117,41 +2285,36 @@ html {
 }
 
 .coffeeshot {
-    width: 100%;
-    height: 100%;
+    width: 66px;
+    height: 138px;
     position: absolute;
     left: 1152px;
     bottom: 471px;
     z-index: 9991;
     overflow: hidden;
-}
-
-.clippath {
-    display: none;
-    bottom: 6px;
-    overflow: hidden;
+    clip-path: polygon(100% 0, 100% 91%, 86% 97%, 50% 100%, 14% 97%, 0 91%, 0 0);
 }
 
 .coffee {
     position: absolute;
     left: 0;
-    bottom: 0px;
-    /* -35~6px */
+    bottom: -44px;
     width: 65px;
     height: 50px;
-    max-width: 65px;
-    max-height: 50px;
-    background-color: #1b0d0d;
-    clip-path: url(#coffeeshape);
+    background: #1b0d0d;
     overflow: hidden;
 }
 
 .crema {
     position: absolute;
     left: 0px;
-    bottom: 6px;
-    /* 6~45px */
-    opacity: 0;
+    bottom: -10px;
+}
+
+.coffeefall {
+    position: absolute;
+    left: 30px;
+    top: -131px;
 }
 
 .coffeeglass {

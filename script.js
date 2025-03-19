@@ -127,7 +127,6 @@ let cancel2 = document.querySelector('.cancel2');
 let cancel3 = document.querySelector('.cancel3');
 let backbtn = document.querySelector('.backbtn');
 let buybtn = document.querySelector('.buybtn');
-let caphovers = document.querySelector('.caphovers');
 
 capclick.addEventListener('click', function () {
     overlay3.style.display = 'block';
@@ -259,6 +258,9 @@ let testbtn = document.querySelector('.testbtn');
 let scanimg = document.querySelector('.scanimg');
 let scanning = document.querySelector('.scanning');
 let testing = document.querySelector('.testing');
+let coffee = document.querySelector('.coffee');
+let crema = document.querySelector('.crema');
+let fall = document.querySelector('.coffeefall');
 
 let isImg = true;
 
@@ -285,6 +287,7 @@ testbtn.addEventListener('click', function () {
         scanimg.style.display = 'none';
         scanning.style.display = 'none';
         testing.style.display = 'block';
+        coffeetest();
         isImg = false;
     } else {
         testbtn.style.opacity = 1;
@@ -323,7 +326,7 @@ function jointmove1() {
         { transform: 'translate(0, 0)' },             // 초기 위치
         { transform: 'translate(0, 287px)' }          // 287px 내려옴
     ], {
-        duration: 1500,
+        duration: 1000,
         easing: 'ease',
         fill: 'forwards'
     }).onfinish = function () {
@@ -336,7 +339,7 @@ function jointmove2() {
         { transform: 'translate(0, 287px)' },         // 내려온 상태에서 시작
         { transform: 'translate(0, 0)' }             // 287px 올라감
     ], {
-        duration: 1500,
+        duration: 1000,
         easing: 'ease',
         fill: 'forwards'
     }).onfinish = function () {
@@ -347,7 +350,7 @@ function jointmove2() {
         { transform: 'translate(0, 0)' },             // 처음 위치에서 시작
         { transform: 'translate(0, -287px)' }         // 287px 올라감
     ], {
-        duration: 1500,
+        duration: 1000,
         easing: 'ease',
         fill: 'forwards'
     });
@@ -386,7 +389,7 @@ function jointmove3() {
         { transform: 'translate(0, 0)' },             // 올라간 상태에서 시작
         { transform: 'translate(0, 287px)' }          // 다시 287px 내려옴
     ], {
-        duration: 1500,
+        duration: 1000,
         easing: 'ease',
         fill: 'forwards'
     }).onfinish = function () {
@@ -397,7 +400,7 @@ function jointmove3() {
         { transform: 'translate(0, -287px)' },         // head가 올라간 상태에서 시작
         { transform: 'translate(0, 0)' }               // head도 내려옴
     ], {
-        duration: 1500,
+        duration: 1000,
         easing: 'ease',
         fill: 'forwards'
     });
@@ -408,7 +411,7 @@ function jointmove4() {
         { transform: 'translate(0, 287px)' },         // 내려온 상태에서 시작
         { transform: 'translate(0, 0)' }             // 원래 위치로 올라감
     ], {
-        duration: 1500,
+        duration: 1000,
         easing: 'ease',
         fill: 'forwards'
     });
@@ -421,3 +424,32 @@ function jointmove4() {
         fill: 'forwards'
     });
 }
+
+function coffeetest() {
+    coffee.animate([
+        { transform: 'translate(0,0)' },
+        { transform: 'translate(0,-51px)' }
+    ], {
+        duration: 2000,
+        easing: 'ease',
+        fill: 'forwards'
+    });
+
+    crema.animate([
+        { transform: 'translate(0,0)' },
+        { transform: 'translate(0,-57px)' }
+    ], {
+        duration: 2000,
+        easing: 'ease',
+        fill: 'forwards'
+    });
+
+    fall.animate([
+        { transform: 'translate(0,0)' },
+        { transform: 'translate(0,131px)' }
+    ], {
+        duration: 100,
+        easing: 'ease',
+        fill: 'forwards'
+    });
+} 
