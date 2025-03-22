@@ -1,10 +1,36 @@
+// 로딩 화면, 시작 화면 크기조절
 
-// 시작 화면 크기조절
+document.addEventListener("DOMContentLoaded", function () {
 
-window.onload = () => {
+    const loadingText = document.querySelector('.loadingText');
+    let counter = 0;
+
+    setInterval(function () {
+        if (counter <= 100) {
+            loadingText.textContent = `${counter}%`;
+            counter++;
+        }
+    }, 28); 
+
+    const loader = document.querySelector('.loading');
     const dragscroll = document.querySelector('.dragscroll');
-    const content = document.querySelector('.background');
 
+    setTimeout(function () {
+        loader.classList.add('hide-loading');
+        dragscroll.classList.add('show-mainContent');
+    }, 3000);
+
+    const intro = document.querySelector('.intro');
+
+    intro.addEventListener('click', function () {
+        intro.style.opacity = '0'; 
+        setTimeout(function() {
+            intro.style.display = 'none'; 
+        }, 500);
+    });
+
+    const content = document.querySelector('.background');
+    
     // 드래그 가능한 영역 크기
     const contentWidth = content.offsetWidth;
     const contentHeight = content.offsetHeight;
@@ -20,7 +46,7 @@ window.onload = () => {
     // 초기 스크롤 위치 설정
     dragscroll.scrollLeft = centerX;
     dragscroll.scrollTop = centerY;
-};
+});
 
 
 // dim처리
