@@ -8,6 +8,61 @@ html {
     font-family: "Pretendard Variable";
 }
 
+#loading {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 99999;
+    /* display: none; */
+}
+
+.loadingwave {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+}
+
+.loadimg1 {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.loadimg2 {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+}
+
+.water-fill {
+    bottom: 0;
+    animation: wave 1.5s infinite linear,
+        fill-up 8s infinite ease-in-out;
+}
+
+@keyframes wave {
+    0% {
+        x: -400px;
+    }
+
+    100% {
+        x: 0;
+    }
+}
+
+@keyframes fill-up {
+    0% {
+        y: 0%;
+    }
+    100% {
+        y: -150%;
+    }
+}
+
 .dragscroll {
     width: 100vw;
     height: 100vh;
