@@ -2243,13 +2243,32 @@ html {
     position: absolute;
     left: 613px;
     bottom: 400px;
-    z-index: 9991;
+    z-index: 9993;
+}
+
+.water {
+    position: absolute;
+    width: 122px;
+    height: 160px;
+    left: 616px;
+    bottom: 454px;
+    background: #fff;
+    opacity: 0.2;
+    z-index: 9993;
 }
 
 .machinehead {
     position: absolute;
     left: 738px;
     bottom: 673px;
+    z-index: 9992;
+    transform-origin: left bottom;
+}
+
+.machinehead img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
     z-index: 9992;
 }
 
@@ -2262,7 +2281,7 @@ html {
 
 .machinepart1 {
     position: absolute;
-    left: 767px;
+    left: 734px;
     bottom: 672px;
     z-index: 9990;
     display: none;
@@ -2270,18 +2289,26 @@ html {
 
 .machinepart2 {
     position: absolute;
-    left: 1005px;
-    bottom: 616px;
-    z-index: 9990;
+    left: 260px;
+    bottom: 0px;
     transform: rotateZ(33deg);
     display: none;
+    z-index: 9991;
 }
 
 .machinepart3 {
     position: absolute;
     left: 1040px;
     bottom: 672px;
+    z-index: 9991;
+}
+
+.testcap {
+    position: absolute;
+    left: 1062px;
+    bottom: 760px;
     z-index: 9990;
+    display: none;
 }
 
 .coffeeshot {

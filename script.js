@@ -261,6 +261,9 @@ let testing = document.querySelector('.testing');
 let coffee = document.querySelector('.coffee');
 let crema = document.querySelector('.crema');
 let fall = document.querySelector('.coffeefall');
+let machinepart1 = document.querySelector('.machinepart1');
+let machinepart2 = document.querySelector('.machinepart2');
+let testcap = document.querySelector('.testcap');
 
 let isImg = true;
 
@@ -292,12 +295,14 @@ testbtn.addEventListener('click', function () {
     } else {
         testbtn.style.opacity = 1;
         testing.style.display = 'none';
+        coffeetest2();
         isImg = true
     };
 });
 
 let btncolors = document.querySelectorAll('#colors');
 let head = document.querySelector('.machinehead img');
+let allhead = document.querySelector('.machinehead');
 let joint = document.querySelector('.headjoint');
 
 let currentAnimation = null;  // 현재 진행 중인 애니메이션을 추적할 변수
@@ -332,7 +337,7 @@ function jointmove1() {
     }).onfinish = function () {
         jointmove2(); // 다음 실행
     };
-}
+};
 
 function jointmove2() {
     currentAnimation = joint.animate([
@@ -354,7 +359,7 @@ function jointmove2() {
         easing: 'ease',
         fill: 'forwards'
     });
-}
+};
 
 function jointmove3() {
     // head.src 변경은 jointmove3가 시작되기 전에 처리
@@ -404,7 +409,7 @@ function jointmove3() {
         easing: 'ease',
         fill: 'forwards'
     });
-}
+};
 
 function jointmove4() {
     currentAnimation = joint.animate([
@@ -423,13 +428,42 @@ function jointmove4() {
         duration: 0,
         fill: 'forwards'
     });
-}
+};
+
+// 커피추출
+allhead.style.transformOrigin = "left bottom";
 
 function coffeetest() {
+    allhead.animate([
+        { transform: "rotate(0deg)" },
+        { transform: "rotate(-33deg)" }
+    ], {
+        duration: 2000,
+        easing: "ease-in-out",
+        fill: "forwards"
+    }).onfinish = function () {
+        head2(); // 다음 실행
+    };
+
+    machinepart1.style.display = 'block';
+
+    machinepart2.style.display = 'block';
+
+    testcap.animate([
+        { display: 'block' },
+        { transform: 'translate(0,0)' },
+        { transform: 'translate(0,83px)' }
+    ], {
+        delay:2000,
+        duration:2000,
+        easing: 'ease-in-out'
+    });
+
     coffee.animate([
         { transform: 'translate(0,0)' },
         { transform: 'translate(0,-51px)' }
     ], {
+        delay: 4000,
         duration: 2000,
         easing: 'ease',
         fill: 'forwards'
@@ -439,6 +473,7 @@ function coffeetest() {
         { transform: 'translate(0,0)' },
         { transform: 'translate(0,-57px)' }
     ], {
+        delay: 4000,
         duration: 2000,
         easing: 'ease',
         fill: 'forwards'
@@ -448,8 +483,68 @@ function coffeetest() {
         { transform: 'translate(0,0)' },
         { transform: 'translate(0,131px)' }
     ], {
+        delay: 4000,
+        duration: 100,
+        easing: 'ease',
+        fill: 'forwards'
+    }).onfinish = function () {
+        fall2(); // 다음 실행
+    };
+};
+
+function fall2() {
+    fall.animate([
+        { transform: 'translate(0,131px)' },
+        { transform: 'translate(0,0)' }
+    ], {
+        delay: 1900,
+        duration: 100,
+        fill: 'forwards'
+    });
+};
+
+function head2() {
+    allhead.animate([
+        { transform: "rotate(-33deg)" },
+        { transform: "rotate(0deg)" }
+    ], {
+        duration: 2000,
+        easing: "ease-in-out",
+        fill: "forwards"
+    }).onfinish = function () {
+        head3();
+    };
+}
+
+function head3(){
+    machinepart1.style.display = 'none';
+    machinepart2.style.display = 'none';
+}
+
+function coffeetest2() {
+    coffee.animate([
+        { transform: 'translate(0,-51px)' },
+        { transform: 'translate(0,0)' }
+    ], {
         duration: 100,
         easing: 'ease',
         fill: 'forwards'
     });
-} 
+
+    crema.animate([
+        { transform: 'translate(0,-57px)' },
+        { transform: 'translate(0,0)' }
+    ], {
+        duration: 100,
+        easing: 'ease',
+        fill: 'forwards'
+    });
+
+    fall.animate([
+        { transform: 'translate(0,131px)' },
+        { transform: 'translate(0,0)' }
+    ], {
+        duration: 0,
+        fill: 'forwards'
+    });
+}
