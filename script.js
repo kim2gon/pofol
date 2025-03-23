@@ -17,17 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setTimeout(function () {
         loader.classList.add('hide-loading');
-        dragscroll.classList.add('show-mainContent');
     }, 3000);
-
-    const intro = document.querySelector('.intro');
-
-    intro.addEventListener('click', function () {
-        intro.style.opacity = '0'; 
-        setTimeout(function() {
-            intro.style.display = 'none'; 
-        }, 500);
-    });
 
     const content = document.querySelector('.background');
     
