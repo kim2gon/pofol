@@ -1,1954 +1,1951 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
 
-body,
-html {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: "Pretendard Variable";
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  overflow: hidden;
+  font-family: "Pretendard Variable";
 }
 
 .loading {
-    background-image: url(/PNG/loder.jpg);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    position: fixed;
-    /* top: 50%;
+  background-image: url(/PNG/loder.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  position: fixed;
+  /* top: 50%;
     left: 50%;
     transform: translate(-50%,-50%); */
-    opacity: 1;
-    /* transform: translate3d(0, 0, 0); */
+  opacity: 1;
+  /* transform: translate3d(0, 0, 0); */
 }
 .wave {
-    position: absolute;
-    bottom: 3%;
-    top: 75%;
-    left: -60%;
-    background: black;
-    width: 4500px;
-    height: 4000px;
-    border-radius: 35%;
-    transition-duration: 0.75s;
-    transition-property: margin-bottom;
-    transition-timing-function: ease;
-    animation: rotate 4300ms infinite linear, up 3100ms infinite linear;
-  }
-
-  
-@keyframes rotate {
-    from { transform: rotate(0deg);
- }
-    from { transform: rotate(-360deg); 
+  position: absolute;
+  bottom: 3%;
+  top: 75%;
+  left: -60%;
+  background: black;
+  width: 4500px;
+  height: 4000px;
+  border-radius: 35%;
+  transition-duration: 0.75s;
+  transition-property: margin-bottom;
+  transition-timing-function: ease;
+  animation: rotate 4300ms infinite linear, up 3100ms infinite linear;
 }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
   }
+  from {
+    transform: rotate(-360deg);
+  }
+}
 
 @keyframes up {
-    0% {
-        top: 85%;
-    }
-    50% {
-        top: 55%;
-    }
-    100% {
-        top: 0%;
-    }
+  0% {
+    top: 85%;
+  }
+  50% {
+    top: 55%;
+  }
+  100% {
+    top: 0%;
+  }
 }
-  
+
 .loadingText {
-    font-size: 4rem;
-    color: white;
-    position: absolute;
-    right: 86px;
-    bottom: 69px;
-    font-weight: bold;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+  font-size: 4rem;
+  color: white;
+  position: absolute;
+  right: 86px;
+  bottom: 69px;
+  font-weight: bold;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .hide-loading {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+  display: none;
+  background-color: transparent;
 }
 
 .dragscroll {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    cursor: grab;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  cursor: grab;
 }
 
 .dragscroll:active {
-    cursor: grabbing;
+  cursor: grabbing;
 }
 
 #dim {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 999;
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 #dim:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #dim h2 {
-    color: #fff;
-    font-size: 44.79pt;
-    font-weight: 500;
+  color: #fff;
+  font-size: 44.79pt;
+  font-weight: 500;
 }
 
 #dim p {
-    color: #fff;
-    font-size: 24.27pt;
-    margin-top: 33px;
-    font-weight: 300;
+  color: #fff;
+  font-size: 24.27pt;
+  margin-top: 33px;
+  font-weight: 300;
 }
 
 .background {
-    width: 4000px;
-    height: 2500px;
-    background-image: url('../PNG/네스프레소-마이크로페이지.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    overflow: hidden;
+  width: 4000px;
+  height: 2500px;
+  background-image: url("../PNG/네스프레소-마이크로페이지.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
 }
 
 /* 섹션 1 */
 
 #section1 {
-    height: 1796px;
-    width: 3105px;
-    left: 0;
-    top: 0;
-    position: absolute;
-    display: inline-block;
+  height: 1796px;
+  width: 3105px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  display: inline-block;
 }
 
 /* 캡슐 1 */
 
 .machine1 {
-    position: absolute;
-    left: 1013px;
-    top: 51px;
-    width: 402px;
-    height: 544px;
+  position: absolute;
+  left: 1013px;
+  top: 51px;
+  width: 402px;
+  height: 544px;
 }
 
 .cap1 {
-    position: absolute;
-    left: 1326px;
-    top: 500px;
-    animation: moveslider1 6s linear infinite;
-    animation-delay: 1s;
-    opacity: 0;
+  position: absolute;
+  left: 1326px;
+  top: 500px;
+  animation: moveslider1 6s linear infinite;
+  animation-delay: 1s;
+  opacity: 0;
 }
 
 .cap12 {
-    position: absolute;
-    left: 1326px;
-    top: 500px;
-    animation: moveslider1 6s linear infinite;
-    animation-delay: 4s;
-    opacity: 0;
+  position: absolute;
+  left: 1326px;
+  top: 500px;
+  animation: moveslider1 6s linear infinite;
+  animation-delay: 4s;
+  opacity: 0;
 }
 
 @keyframes moveslider1 {
-    0% {
-        transform: translateX(0) translateY(0);
-        opacity: 0;
-    }
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
 
-    5% {
-        opacity: 1;
-    }
+  5% {
+    opacity: 1;
+  }
 
-    95% {
-        opacity: 1;
-    }
+  95% {
+    opacity: 1;
+  }
 
-    100% {
-        transform: translateX(294px) translateY(170px);
-        opacity: 0;
-    }
+  100% {
+    transform: translateX(294px) translateY(170px);
+    opacity: 0;
+  }
 }
 
 /* 캡슐2 */
 
 .machine2 {
-    position: absolute;
-    left: 808px;
-    top: 284px;
-    width: 415px;
-    height: 582px;
+  position: absolute;
+  left: 808px;
+  top: 284px;
+  width: 415px;
+  height: 582px;
 }
 
 .cap2 {
-    position: absolute;
-    left: 1150px;
-    top: 723px;
-    animation: moveslider2 6s linear infinite;
-    animation-delay: 1s;
-    opacity: 0;
+  position: absolute;
+  left: 1150px;
+  top: 723px;
+  animation: moveslider2 6s linear infinite;
+  animation-delay: 1s;
+  opacity: 0;
 }
 
 .cap22 {
-    position: absolute;
-    left: 1150px;
-    top: 723px;
-    animation: moveslider2 6s linear infinite;
-    animation-delay: 4s;
-    opacity: 0;
+  position: absolute;
+  left: 1150px;
+  top: 723px;
+  animation: moveslider2 6s linear infinite;
+  animation-delay: 4s;
+  opacity: 0;
 }
 
 @keyframes moveslider2 {
-    0% {
-        transform: translateX(0) translateY(0);
-        opacity: 0;
-    }
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
 
-    5% {
-        opacity: 1;
-    }
+  5% {
+    opacity: 1;
+  }
 
-    95% {
-        opacity: 1;
-    }
+  95% {
+    opacity: 1;
+  }
 
-    100% {
-        transform: translateX(185px) translateY(107px);
-        opacity: 0;
-    }
+  100% {
+    transform: translateX(185px) translateY(107px);
+    opacity: 0;
+  }
 }
 
 /* 캡슐 3 */
 
 .machine3 {
-    position: absolute;
-    left: 35px;
-    top: 558px;
-    width: 478px;
-    height: 624px;
+  position: absolute;
+  left: 35px;
+  top: 558px;
+  width: 478px;
+  height: 624px;
 }
 
 .cap3 {
-    position: absolute;
-    left: 363px;
-    top: 1040px;
-    animation: moveslider3 6s linear infinite;
-    animation-delay: 1s;
-    opacity: 0;
+  position: absolute;
+  left: 363px;
+  top: 1040px;
+  animation: moveslider3 6s linear infinite;
+  animation-delay: 1s;
+  opacity: 0;
 }
 
 .cap32 {
-    position: absolute;
-    left: 365px;
-    top: 1040px;
-    animation: moveslider3 6s linear infinite;
-    animation-delay: 4s;
-    opacity: 0;
+  position: absolute;
+  left: 365px;
+  top: 1040px;
+  animation: moveslider3 6s linear infinite;
+  animation-delay: 4s;
+  opacity: 0;
 }
 
 @keyframes moveslider3 {
-    0% {
-        transform: translateX(0) translateY(0);
-        opacity: 0;
-    }
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
 
-    5% {
-        opacity: 1;
-    }
+  5% {
+    opacity: 1;
+  }
 
-    95% {
-        opacity: 1;
-    }
+  95% {
+    opacity: 1;
+  }
 
-    100% {
-        transform: translateX(277px) translateY(160px);
-        opacity: 0;
-    }
+  100% {
+    transform: translateX(277px) translateY(160px);
+    opacity: 0;
+  }
 }
 
 /* 캡슐 4 */
 
 .cap4 {
-    position: absolute;
-    left: 536px;
-    top: 342px;
-    animation: moveslider4 6s linear infinite forwards;
-    animation-delay: 1s;
-    opacity: 0;
+  position: absolute;
+  left: 536px;
+  top: 342px;
+  animation: moveslider4 6s linear infinite forwards;
+  animation-delay: 1s;
+  opacity: 0;
 }
 
 .cap42 {
-    position: absolute;
-    left: 536px;
-    top: 342px;
-    animation: moveslider4 6s linear infinite forwards;
-    animation-delay: 3s;
-    opacity: 0;
+  position: absolute;
+  left: 536px;
+  top: 342px;
+  animation: moveslider4 6s linear infinite forwards;
+  animation-delay: 3s;
+  opacity: 0;
 }
 
 .cap43 {
-    position: absolute;
-    left: 536px;
-    top: 342px;
-    animation: moveslider4 6s linear infinite forwards;
-    animation-delay: 5s;
-    opacity: 0;
+  position: absolute;
+  left: 536px;
+  top: 342px;
+  animation: moveslider4 6s linear infinite forwards;
+  animation-delay: 5s;
+  opacity: 0;
 }
 
 .cap44 {
-    position: absolute;
-    left: 536px;
-    top: 342px;
-    animation: moveslider4 6s linear infinite forwards;
-    animation-delay: 7s;
-    opacity: 0;
+  position: absolute;
+  left: 536px;
+  top: 342px;
+  animation: moveslider4 6s linear infinite forwards;
+  animation-delay: 7s;
+  opacity: 0;
 }
 
 .cap45 {
-    position: absolute;
-    left: 272px;
-    top: 492px;
-    animation: moveslider5 6s linear infinite;
-    animation-delay: 7s;
-    opacity: 0;
+  position: absolute;
+  left: 272px;
+  top: 492px;
+  animation: moveslider5 6s linear infinite;
+  animation-delay: 7s;
+  opacity: 0;
 }
 
 .cap46 {
-    position: absolute;
-    left: 272px;
-    top: 492px;
-    animation: moveslider5 6s linear infinite;
-    animation-delay: 9s;
-    opacity: 0;
+  position: absolute;
+  left: 272px;
+  top: 492px;
+  animation: moveslider5 6s linear infinite;
+  animation-delay: 9s;
+  opacity: 0;
 }
 
 .cap47 {
-    position: absolute;
-    left: 272px;
-    top: 492px;
-    animation: moveslider5 6s linear infinite;
-    animation-delay: 11s;
-    opacity: 0;
+  position: absolute;
+  left: 272px;
+  top: 492px;
+  animation: moveslider5 6s linear infinite;
+  animation-delay: 11s;
+  opacity: 0;
 }
 
 @keyframes moveslider4 {
-    0% {
-        transform: translateX(0) translateY(0);
-        opacity: 0;
-    }
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
 
-    5% {
-        opacity: 1;
-    }
+  5% {
+    opacity: 1;
+  }
 
-    100% {
-        transform: translateX(-264px) translateY(149px);
-        opacity: 1;
-    }
+  100% {
+    transform: translateX(-264px) translateY(149px);
+    opacity: 1;
+  }
 }
 
 @keyframes moveslider5 {
-    0% {
-        transform: translateX(0) translateY(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
 
-    95% {
-        opacity: 1;
-    }
+  95% {
+    opacity: 1;
+  }
 
-    100% {
-        transform: translateX(198px) translateY(113px);
-        opacity: 0;
-    }
+  100% {
+    transform: translateX(198px) translateY(113px);
+    opacity: 0;
+  }
 }
 
 /* hover */
 .con1 .plus {
-    position: absolute;
-    left: 1272px;
-    top: 130px;
+  position: absolute;
+  left: 1272px;
+  top: 130px;
 }
 
 .con1 .next {
-    position: absolute;
-    left: 840px;
-    top: 289px;
+  position: absolute;
+  left: 840px;
+  top: 289px;
 }
 
 .con1 .pop {
-    position: absolute;
-    left: 180px;
-    top: 590px;
+  position: absolute;
+  left: 180px;
+  top: 590px;
 }
 
 .con1 .caution1 {
-    position: absolute;
-    left: 1290px;
-    top: 30px;
-    animation: hovering1 4s ease-in-out infinite;
+  position: absolute;
+  left: 1290px;
+  top: 30px;
+  animation: hovering1 4s ease-in-out infinite;
 }
 
 .con1 .caution2 {
-    position: absolute;
-    left: 940px;
-    top: 150px;
-    animation: hovering1 4s ease-in-out infinite;
+  position: absolute;
+  left: 940px;
+  top: 150px;
+  animation: hovering1 4s ease-in-out infinite;
 }
 
 .con1 .caution3 {
-    position: absolute;
-    left: 190px;
-    top: 450px;
-    animation: hovering1 4s ease-in-out infinite;
+  position: absolute;
+  left: 190px;
+  top: 450px;
+  animation: hovering1 4s ease-in-out infinite;
 }
 
 @keyframes hovering1 {
-    0% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
 
-    50% {
-        transform: translateY(-40px);
-    }
+  50% {
+    transform: translateY(-40px);
+  }
 
-    100% {
-        transform: translateY(0);
-    }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .con1 .human1 {
-    position: absolute;
-    left: 1235px;
-    top: 742px;
+  position: absolute;
+  left: 1235px;
+  top: 742px;
 }
 
 .con1 .workcar1 {
-    position: absolute;
-    right: 858px;
-    top: 0px;
-    animation: driving1 12s ease-in-out infinite;
+  position: absolute;
+  right: 858px;
+  top: 0px;
+  animation: driving1 12s ease-in-out infinite;
 }
 
 .con1 .worker1 {
-    position: absolute;
-    left: 300px;
-    top: 1280px;
+  position: absolute;
+  left: 300px;
+  top: 1280px;
 }
 
 .con1 .worker2 {
-    position: absolute;
-    right: 600px;
-    top: 60px;
+  position: absolute;
+  right: 600px;
+  top: 60px;
 }
 
 .con1 .drone1 {
-    position: absolute;
-    right: 1340px;
-    top: 45px;
-    animation: hovering2 4s ease-in-out infinite;
+  position: absolute;
+  right: 1340px;
+  top: 45px;
+  animation: hovering2 4s ease-in-out infinite;
 }
 
 .con1 .drone2 {
-    position: absolute;
-    left: 1090px;
-    top: 1010px;
-    animation: hovering2 4s ease-in-out infinite;
-    animation-delay: 1s;
+  position: absolute;
+  left: 1090px;
+  top: 1010px;
+  animation: hovering2 4s ease-in-out infinite;
+  animation-delay: 1s;
 }
 
 @keyframes driving1 {
-    0% {
-        transform: translateX(0) translateY(0);
-    }
+  0% {
+    transform: translateX(0) translateY(0);
+  }
 
-    50% {
-        transform: translateX(-279px) translateY(158px);
-    }
+  50% {
+    transform: translateX(-279px) translateY(158px);
+  }
 
-    100% {
-        transform: translateX(0) translateY(0);
-    }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
 }
 
 @keyframes hovering2 {
-    0% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
 
-    50% {
-        transform: translateY(40px);
-    }
+  50% {
+    transform: translateY(40px);
+  }
 
-    100% {
-        transform: translateY(0);
-    }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* 섹션 2 */
 
 #section2 {
-    height: 1000px;
-    width: 2000px;
-    left: 0;
-    bottom: 0;
-    position: absolute;
-    display: inline-block;
+  height: 1000px;
+  width: 2000px;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  display: inline-block;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 98;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 98;
 }
 
 .recyclepopup {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    z-index: 99;
-    cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 99;
+  cursor: pointer;
 }
 
 .con2 {
-    position: absolute;
-    left: 90px;
-    bottom: 5px;
+  position: absolute;
+  left: 90px;
+  bottom: 5px;
 }
 
 .con2 img {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .con2 .capcase {
-    position: absolute;
-    left: -165px;
-    bottom: -40px;
-    z-index: 1;
+  position: absolute;
+  left: -165px;
+  bottom: -40px;
+  z-index: 1;
 }
 
 .con2 .caution {
-    position: absolute;
-    left: 78px;
-    bottom: 1050px;
-    z-index: 2;
-    animation: hovering1 4s ease-in-out infinite;
+  position: absolute;
+  left: 78px;
+  bottom: 1050px;
+  z-index: 2;
+  animation: hovering1 4s ease-in-out infinite;
 }
 
 .con2 .pen {
-    position: absolute;
-    left: 1650px;
-    bottom: 480px;
-    animation: hovering1 6s ease-in-out infinite;
+  position: absolute;
+  left: 1650px;
+  bottom: 480px;
+  animation: hovering1 6s ease-in-out infinite;
 }
 
 .con2 .penshadow {
-    position: absolute;
-    left: 1650px;
-    bottom: 480px;
+  position: absolute;
+  left: 1650px;
+  bottom: 480px;
 }
 
 .con2 .human1 {
-    position: absolute;
-    left: 530px;
-    bottom: 270px;
+  position: absolute;
+  left: 530px;
+  bottom: 270px;
 }
 
 .con2 .worker1 {
-    position: absolute;
-    left: 1170px;
-    bottom: 540px;
+  position: absolute;
+  left: 1170px;
+  bottom: 540px;
 }
 
 .con2 .worker2 {
-    position: absolute;
-    left: 1910px;
-    bottom: 85px;
+  position: absolute;
+  left: 1910px;
+  bottom: 85px;
 }
 
 .con2 .worker3 {
-    position: absolute;
-    left: 1750px;
-    bottom: 360px;
+  position: absolute;
+  left: 1750px;
+  bottom: 360px;
 }
 
 .con2 .worker4 {
-    position: absolute;
-    left: 2350px;
-    bottom: 123px;
+  position: absolute;
+  left: 2350px;
+  bottom: 123px;
 }
 
 .con2 .worker5 {
-    position: absolute;
-    left: 2315px;
-    bottom: 405px;
+  position: absolute;
+  left: 2315px;
+  bottom: 405px;
 }
 
 .drone3 {
-    position: absolute;
-    left: 2260px;
-    bottom: 610px;
-    animation: hovering2 4s ease-in-out infinite;
-    animation-delay: 2s;
+  position: absolute;
+  left: 2260px;
+  bottom: 610px;
+  animation: hovering2 4s ease-in-out infinite;
+  animation-delay: 2s;
 }
 
 .con2 .capsules {
-    position: absolute;
-    width: 120px;
-    height: 60px;
-    left: 320px;
-    bottom: 360px;
-    transform: rotate(-30deg);
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  left: 320px;
+  bottom: 360px;
+  transform: rotate(-30deg);
 }
 
 .rancap {
-    position: absolute;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 .capsule8 {
-    position: absolute;
-    left: 685px;
-    bottom: 500px;
-    animation: moveslider6 12s linear infinite forwards;
-    animation-delay: 1s;
-    opacity: 0;
+  position: absolute;
+  left: 685px;
+  bottom: 500px;
+  animation: moveslider6 12s linear infinite forwards;
+  animation-delay: 1s;
+  opacity: 0;
 }
 
 .capsule9 {
-    position: absolute;
-    left: 685px;
-    bottom: 500px;
-    animation: moveslider6 12s linear infinite forwards;
-    animation-delay: 2s;
-    opacity: 0;
+  position: absolute;
+  left: 685px;
+  bottom: 500px;
+  animation: moveslider6 12s linear infinite forwards;
+  animation-delay: 2s;
+  opacity: 0;
 }
 
 .capsule10 {
-    position: absolute;
-    left: 685px;
-    bottom: 500px;
-    animation: moveslider6 12s linear infinite forwards;
-    animation-delay: 3s;
-    opacity: 0;
+  position: absolute;
+  left: 685px;
+  bottom: 500px;
+  animation: moveslider6 12s linear infinite forwards;
+  animation-delay: 3s;
+  opacity: 0;
 }
 
 .capsule11 {
-    position: absolute;
-    left: 685px;
-    bottom: 500px;
-    animation: moveslider6 12s linear infinite forwards;
-    animation-delay: 4s;
-    opacity: 0;
+  position: absolute;
+  left: 685px;
+  bottom: 500px;
+  animation: moveslider6 12s linear infinite forwards;
+  animation-delay: 4s;
+  opacity: 0;
 }
 
 .capsule12 {
-    position: absolute;
-    left: 685px;
-    bottom: 500px;
-    animation: moveslider6 12s linear infinite forwards;
-    animation-delay: 5s;
-    opacity: 0;
+  position: absolute;
+  left: 685px;
+  bottom: 500px;
+  animation: moveslider6 12s linear infinite forwards;
+  animation-delay: 5s;
+  opacity: 0;
 }
 
 .capsule13 {
-    position: absolute;
-    left: 685px;
-    bottom: 500px;
-    animation: moveslider6 12s linear infinite forwards;
-    animation-delay: 6s;
-    opacity: 0;
+  position: absolute;
+  left: 685px;
+  bottom: 500px;
+  animation: moveslider6 12s linear infinite forwards;
+  animation-delay: 6s;
+  opacity: 0;
 }
 
 .capsule14 {
-    position: absolute;
-    left: 685px;
-    bottom: 500px;
-    animation: moveslider6 12s linear infinite forwards;
-    animation-delay: 7s;
-    opacity: 0;
+  position: absolute;
+  left: 685px;
+  bottom: 500px;
+  animation: moveslider6 12s linear infinite forwards;
+  animation-delay: 7s;
+  opacity: 0;
 }
 
 .capsule15 {
-    position: absolute;
-    left: 685px;
-    bottom: 500px;
-    animation: moveslider6 12s linear infinite forwards;
-    animation-delay: 8s;
-    opacity: 0;
+  position: absolute;
+  left: 685px;
+  bottom: 500px;
+  animation: moveslider6 12s linear infinite forwards;
+  animation-delay: 8s;
+  opacity: 0;
 }
 
 .capsule16 {
-    position: absolute;
-    left: 685px;
-    bottom: 500px;
-    animation: moveslider6 12s linear infinite forwards;
-    animation-delay: 9s;
-    opacity: 0;
+  position: absolute;
+  left: 685px;
+  bottom: 500px;
+  animation: moveslider6 12s linear infinite forwards;
+  animation-delay: 9s;
+  opacity: 0;
 }
 
 .capsule17 {
-    position: absolute;
-    left: 685px;
-    bottom: 500px;
-    animation: moveslider6 12s linear infinite forwards;
-    animation-delay: 10s;
-    opacity: 0;
+  position: absolute;
+  left: 685px;
+  bottom: 500px;
+  animation: moveslider6 12s linear infinite forwards;
+  animation-delay: 10s;
+  opacity: 0;
 }
 
 .capsule18 {
-    position: absolute;
-    left: 685px;
-    bottom: 500px;
-    animation: moveslider6 12s linear infinite forwards;
-    animation-delay: 11s;
-    opacity: 0;
+  position: absolute;
+  left: 685px;
+  bottom: 500px;
+  animation: moveslider6 12s linear infinite forwards;
+  animation-delay: 11s;
+  opacity: 0;
 }
 
 .capsule19 {
-    position: absolute;
-    left: 685px;
-    bottom: 500px;
-    animation: moveslider6 12s linear infinite forwards;
-    animation-delay: 12s;
-    opacity: 0;
+  position: absolute;
+  left: 685px;
+  bottom: 500px;
+  animation: moveslider6 12s linear infinite forwards;
+  animation-delay: 12s;
+  opacity: 0;
 }
 
-
 .capsule20 {
-    position: absolute;
-    left: 1170px;
-    bottom: 225px;
-    animation: moveslider7 6s linear infinite;
-    animation-delay: 13s;
-    opacity: 0;
+  position: absolute;
+  left: 1170px;
+  bottom: 225px;
+  animation: moveslider7 6s linear infinite;
+  animation-delay: 13s;
+  opacity: 0;
 }
 
 .capsule21 {
-    position: absolute;
-    left: 1170px;
-    bottom: 225px;
-    animation: moveslider7 6s linear infinite;
-    animation-delay: 14s;
-    opacity: 0;
+  position: absolute;
+  left: 1170px;
+  bottom: 225px;
+  animation: moveslider7 6s linear infinite;
+  animation-delay: 14s;
+  opacity: 0;
 }
 
 .capsule22 {
-    position: absolute;
-    left: 1170px;
-    bottom: 225px;
-    animation: moveslider7 6s linear infinite;
-    animation-delay: 15s;
-    opacity: 0;
+  position: absolute;
+  left: 1170px;
+  bottom: 225px;
+  animation: moveslider7 6s linear infinite;
+  animation-delay: 15s;
+  opacity: 0;
 }
 
 .capsule23 {
-    position: absolute;
-    left: 1170px;
-    bottom: 225px;
-    animation: moveslider7 6s linear infinite;
-    animation-delay: 16s;
-    opacity: 0;
+  position: absolute;
+  left: 1170px;
+  bottom: 225px;
+  animation: moveslider7 6s linear infinite;
+  animation-delay: 16s;
+  opacity: 0;
 }
 
 .capsule24 {
-    position: absolute;
-    left: 1170px;
-    bottom: 225px;
-    animation: moveslider7 6s linear infinite;
-    animation-delay: 17s;
-    opacity: 0;
+  position: absolute;
+  left: 1170px;
+  bottom: 225px;
+  animation: moveslider7 6s linear infinite;
+  animation-delay: 17s;
+  opacity: 0;
 }
 
 .capsule25 {
-    position: absolute;
-    left: 1170px;
-    bottom: 225px;
-    animation: moveslider7 6s linear infinite;
-    animation-delay: 18s;
-    opacity: 0;
+  position: absolute;
+  left: 1170px;
+  bottom: 225px;
+  animation: moveslider7 6s linear infinite;
+  animation-delay: 18s;
+  opacity: 0;
 }
 
 @keyframes moveslider6 {
-    0% {
-        transform: translateX(0) translateY(0);
-        opacity: 0;
-    }
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
 
-    5% {
-        opacity: 1;
-    }
+  5% {
+    opacity: 1;
+  }
 
-    100% {
-        transform: translateX(485px) translateY(275px);
-        opacity: 1;
-    }
+  100% {
+    transform: translateX(485px) translateY(275px);
+    opacity: 1;
+  }
 }
 
 @keyframes moveslider7 {
-    0% {
-        transform: translateX(0) translateY(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
 
-    95% {
-        opacity: 1;
-    }
+  95% {
+    opacity: 1;
+  }
 
-    100% {
-        transform: translateX(185px) translateY(-95px);
-        opacity: 0;
-    }
+  100% {
+    transform: translateX(185px) translateY(-95px);
+    opacity: 0;
+  }
 }
 
 /* 섹션 3 */
 
 #section3 {
-    height: 2062px;
-    width: 1561px;
-    right: 0;
-    top: 0;
-    position: absolute;
-    display: inline-block;
+  height: 2062px;
+  width: 1561px;
+  right: 0;
+  top: 0;
+  position: absolute;
+  display: inline-block;
 }
 
 .con3 {
-    position: absolute;
-    left: 87px;
-    bottom: 52px;
+  position: absolute;
+  left: 87px;
+  bottom: 52px;
 }
 
 .con3 img {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .redcap {
-    position: absolute;
-    left: 68px;
-    bottom: 1622px;
+  position: absolute;
+  left: 68px;
+  bottom: 1622px;
 }
 
 .pinkcap {
-    position: absolute;
-    left: 150px;
-    bottom: 1670px;
+  position: absolute;
+  left: 150px;
+  bottom: 1670px;
 }
 
 .bluecap {
-    position: absolute;
-    left: 232px;
-    bottom: 1718px;
+  position: absolute;
+  left: 232px;
+  bottom: 1718px;
 }
 
 .greencap {
-    position: absolute;
-    left: 315px;
-    bottom: 1765px;
+  position: absolute;
+  left: 315px;
+  bottom: 1765px;
 }
 
 .browncap {
-    position: absolute;
-    left: 397px;
-    bottom: 1812px;
+  position: absolute;
+  left: 397px;
+  bottom: 1812px;
 }
 
 .redchoice {
-    position: absolute;
-    left: 56px;
-    bottom: 1611px;
-    opacity: 0;
+  position: absolute;
+  left: 56px;
+  bottom: 1611px;
+  opacity: 0;
 }
 
 .redchoice:hover {
-    opacity: 1 !important;
-    transition: opacity 0.3s ease;
+  opacity: 1 !important;
+  transition: opacity 0.3s ease;
 }
 
 .pinkchoice {
-    position: absolute;
-    left: 139px;
-    bottom: 1659px;
-    opacity: 0;
+  position: absolute;
+  left: 139px;
+  bottom: 1659px;
+  opacity: 0;
 }
 
 .pinkchoice:hover {
-    opacity: 1 !important;
-    transition: opacity 0.3s ease;
+  opacity: 1 !important;
+  transition: opacity 0.3s ease;
 }
 
 .bluechoice {
-    position: absolute;
-    left: 221px;
-    bottom: 1707px;
-    opacity: 0;
+  position: absolute;
+  left: 221px;
+  bottom: 1707px;
+  opacity: 0;
 }
 
 .bluechoice:hover {
-    opacity: 1 !important;
-    transition: opacity 0.3s ease;
+  opacity: 1 !important;
+  transition: opacity 0.3s ease;
 }
 
 .greenchoice {
-    position: absolute;
-    left: 304px;
-    bottom: 1754px;
-    opacity: 0;
+  position: absolute;
+  left: 304px;
+  bottom: 1754px;
+  opacity: 0;
 }
 
 .greenchoice:hover {
-    opacity: 1 !important;
-    transition: opacity 0.3s ease;
+  opacity: 1 !important;
+  transition: opacity 0.3s ease;
 }
 
 .brownchoice {
-    position: absolute;
-    left: 386px;
-    bottom: 1801px;
-    opacity: 0;
+  position: absolute;
+  left: 386px;
+  bottom: 1801px;
+  opacity: 0;
 }
 
 .brownchoice:hover {
-    opacity: 1 !important;
-    transition: opacity 0.3s ease;
+  opacity: 1 !important;
+  transition: opacity 0.3s ease;
 }
 
 .machine {
-    position: absolute;
-    left: 466px;
-    bottom: 1007px;
+  position: absolute;
+  left: 466px;
+  bottom: 1007px;
 }
 
 .capclick {
-    position: absolute;
-    left: 658px;
-    bottom: 144px;
+  position: absolute;
+  left: 658px;
+  bottom: 144px;
 }
 
 /* 캡슐 팝업 */
 
 .capsulepopup {
-    position: absolute;
-    width: 1200px;
-    height: 640px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    z-index: 999;
-    overflow: hidden;
+  position: absolute;
+  width: 1200px;
+  height: 640px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 999;
+  overflow: hidden;
 }
 
 .capsuleclicks {
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* display: none; */
-    /* opacity: 0; */
-    cursor: pointer;
-    z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* display: none; */
+  /* opacity: 0; */
+  cursor: pointer;
+  z-index: 999;
 }
 
 .caphover1 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 183px;
-    left: 109px;
-    width: 81px;
-    height: 82px;
-    opacity: 0;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 183px;
+  left: 109px;
+  width: 81px;
+  height: 82px;
+  opacity: 0;
 }
 
 .caphover2 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 183px;
-    left: 1011px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 183px;
+  left: 1011px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover3 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 266px;
-    left: 109px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 266px;
+  left: 109px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover4 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 266px;
-    left: 191px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 266px;
+  left: 191px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover5 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 266px;
-    left: 273px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 266px;
+  left: 273px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover6 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 266px;
-    left: 355px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 266px;
+  left: 355px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover7 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 266px;
-    left: 437px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 266px;
+  left: 437px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover8 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 266px;
-    left: 519px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 266px;
+  left: 519px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover9 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 266px;
-    left: 601px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 266px;
+  left: 601px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover10 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 266px;
-    left: 683px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 266px;
+  left: 683px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover11 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 266px;
-    left: 765px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 266px;
+  left: 765px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover12 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 266px;
-    left: 847px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 266px;
+  left: 847px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover13 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 266px;
-    left: 929px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 266px;
+  left: 929px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover14 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 266px;
-    left: 1011px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 266px;
+  left: 1011px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover15 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 349px;
-    left: 109px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 349px;
+  left: 109px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover16 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 349px;
-    left: 191px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 349px;
+  left: 191px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover17 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 349px;
-    left: 273px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 349px;
+  left: 273px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover18 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 349px;
-    left: 355px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 349px;
+  left: 355px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover19 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 349px;
-    left: 437px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 349px;
+  left: 437px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover20 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 349px;
-    left: 519px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 349px;
+  left: 519px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover21 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 349px;
-    left: 601px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 349px;
+  left: 601px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover22 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 349px;
-    left: 683px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 349px;
+  left: 683px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover23 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 349px;
-    left: 765px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 349px;
+  left: 765px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover24 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 349px;
-    left: 847px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 349px;
+  left: 847px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover25 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 349px;
-    left: 929px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 349px;
+  left: 929px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover26 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 349px;
-    left: 1011px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 349px;
+  left: 1011px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover27 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 432px;
-    left: 191px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 432px;
+  left: 191px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover28 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 432px;
-    left: 273px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 432px;
+  left: 273px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover29 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 432px;
-    left: 355px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 432px;
+  left: 355px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover30 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 432px;
-    left: 437px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 432px;
+  left: 437px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover31 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 432px;
-    left: 519px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 432px;
+  left: 519px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover32 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 432px;
-    left: 601px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 432px;
+  left: 601px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover33 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 432px;
-    left: 683px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 432px;
+  left: 683px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover34 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 432px;
-    left: 765px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 432px;
+  left: 765px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover35 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 432px;
-    left: 847px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 432px;
+  left: 847px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover36 {
-    position: absolute;
-    cursor: pointer;
-    z-index: 999;
-    top: 432px;
-    left: 929px;
-    width: 81px;
-    height: 82px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  top: 432px;
+  left: 929px;
+  width: 81px;
+  height: 82px;
 }
 
 .caphover1:hover {
-    background: #000;
-    opacity: 0.5;
+  background: #000;
+  opacity: 0.5;
 }
 
 .caphover2:hover {
-    background: #ed6f6a;
-    opacity: 0.5;
+  background: #ed6f6a;
+  opacity: 0.5;
 }
 
 .caphover3:hover {
-    background: #5c4028;
-    opacity: 0.5;
+  background: #5c4028;
+  opacity: 0.5;
 }
 
 .caphover4:hover {
-    background: #e59e03;
-    opacity: 0.5;
+  background: #e59e03;
+  opacity: 0.5;
 }
 
 .caphover5:hover {
-    background: #e07700;
-    opacity: 0.5;
+  background: #e07700;
+  opacity: 0.5;
 }
 
 .caphover6:hover {
-    background: #b09dcc;
-    opacity: 0.5;
+  background: #b09dcc;
+  opacity: 0.5;
 }
 
 .caphover7:hover {
-    background: #5b3395;
-    opacity: 0.5;
+  background: #5b3395;
+  opacity: 0.5;
 }
 
 .caphover8:hover {
-    background: #1d2f62;
-    opacity: 0.5;
+  background: #1d2f62;
+  opacity: 0.5;
 }
 
 .caphover9:hover {
-    background: #273317;
-    opacity: 0.5;
+  background: #273317;
+  opacity: 0.5;
 }
 
 .caphover10:hover {
-    background: #8edade;
-    opacity: 0.5;
+  background: #8edade;
+  opacity: 0.5;
 }
 
 .caphover11:hover {
-    background: #bd884a;
-    opacity: 0.5;
+  background: #bd884a;
+  opacity: 0.5;
 }
 
 .caphover12:hover {
-    background: #9a5309;
-    opacity: 0.5;
+  background: #9a5309;
+  opacity: 0.5;
 }
 
 .caphover13:hover {
-    background: #413020;
-    opacity: 0.5;
+  background: #413020;
+  opacity: 0.5;
 }
 
 .caphover14:hover {
-    background: #1e1513;
-    opacity: 0.5;
+  background: #1e1513;
+  opacity: 0.5;
 }
 
 .caphover15:hover {
-    background: #f07203;
-    opacity: 0.5;
+  background: #f07203;
+  opacity: 0.5;
 }
 
 .caphover16:hover {
-    background: #9c877d;
-    opacity: 0.5;
+  background: #9c877d;
+  opacity: 0.5;
 }
 
 .caphover17:hover {
-    background: #0298ba;
-    opacity: 0.5;
+  background: #0298ba;
+  opacity: 0.5;
 }
 
 .caphover18:hover {
-    background: #4c9ebd;
-    opacity: 0.5;
+  background: #4c9ebd;
+  opacity: 0.5;
 }
 
 .caphover19:hover {
-    background: #824105;
-    opacity: 0.5;
+  background: #824105;
+  opacity: 0.5;
 }
 
 .caphover20:hover {
-    background: #eadfc5;
-    opacity: 0.5;
+  background: #eadfc5;
+  opacity: 0.5;
 }
 
 .caphover21:hover {
-    background: #dca465;
-    opacity: 0.5;
+  background: #dca465;
+  opacity: 0.5;
 }
 
 .caphover22:hover {
-    background: #903d2d;
-    opacity: 0.5;
+  background: #903d2d;
+  opacity: 0.5;
 }
 
 .caphover23:hover {
-    background: #925838;
-    opacity: 0.5;
+  background: #925838;
+  opacity: 0.5;
 }
 
 .caphover24:hover {
-    background: #ffc806;
-    opacity: 0.5;
+  background: #ffc806;
+  opacity: 0.5;
 }
 
 .caphover25:hover {
-    background: #b9333a;
-    opacity: 0.5;
+  background: #b9333a;
+  opacity: 0.5;
 }
 
 .caphover26:hover {
-    background: #8a5062;
-    opacity: 0.5;
+  background: #8a5062;
+  opacity: 0.5;
 }
 
 .caphover27:hover {
-    background: #abaaa6;
-    opacity: 0.5;
+  background: #abaaa6;
+  opacity: 0.5;
 }
 
 .caphover28:hover {
-    background: #514e47;
-    opacity: 0.5;
+  background: #514e47;
+  opacity: 0.5;
 }
 
 .caphover29:hover {
-    background: #440809;
-    opacity: 0.5;
+  background: #440809;
+  opacity: 0.5;
 }
 
 .caphover30:hover {
-    background: #b88c84;
-    opacity: 0.5;
+  background: #b88c84;
+  opacity: 0.5;
 }
 
 .caphover31:hover {
-    background: #e4c8aa;
-    opacity: 0.5;
+  background: #e4c8aa;
+  opacity: 0.5;
 }
 
 .caphover32:hover {
-    background: #e28952;
-    opacity: 0.5;
+  background: #e28952;
+  opacity: 0.5;
 }
 
 .caphover33:hover {
-    background: #69942e;
-    opacity: 0.5;
+  background: #69942e;
+  opacity: 0.5;
 }
 
 .caphover34:hover {
-    background: #017295;
-    opacity: 0.5;
+  background: #017295;
+  opacity: 0.5;
 }
 
 .caphover35:hover {
-    background: #186b3e;
-    opacity: 0.5;
+  background: #186b3e;
+  opacity: 0.5;
 }
 
 .caphover36:hover {
-    background: #562b18;
-    opacity: 0.5;
+  background: #562b18;
+  opacity: 0.5;
 }
 
-
 .capsulepopup2 {
-    position: absolute;
-    width: 1200px;
-    height: 640px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    z-index: 999;
-    overflow: hidden;
+  position: absolute;
+  width: 1200px;
+  height: 640px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 999;
+  overflow: hidden;
 }
 
 .overlay3 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 998;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 998;
 }
 
 .cancel2 {
-    position: absolute;
-    right: 96px;
-    top: 56px;
-    width: 70px;
-    cursor: pointer;
-    z-index: 9999;
-    display: none;
+  position: absolute;
+  right: 96px;
+  top: 56px;
+  width: 70px;
+  cursor: pointer;
+  z-index: 9999;
+  display: none;
 }
 
 .cancel3 {
-    position: absolute;
-    right: 96px;
-    top: 56px;
-    width: 70px;
-    cursor: pointer;
-    z-index: 9999;
-    display: none;
+  position: absolute;
+  right: 96px;
+  top: 56px;
+  width: 70px;
+  cursor: pointer;
+  z-index: 9999;
+  display: none;
 }
 
 .backbtn {
-    position: absolute;
-    left: 120px;
-    bottom: 75px;
-    width: 135px;
-    height: 35px;
-    cursor: pointer;
+  position: absolute;
+  left: 120px;
+  bottom: 75px;
+  width: 135px;
+  height: 35px;
+  cursor: pointer;
 }
 
 .buybtn {
-    position: absolute;
-    left: 980px;
-    bottom: 75px;
-    width: 105px;
-    height: 35px;
-    cursor: pointer;
+  position: absolute;
+  left: 980px;
+  bottom: 75px;
+  width: 105px;
+  height: 35px;
+  cursor: pointer;
 }
 
 .con3 .caution {
-    position: absolute;
-    left: 795px;
-    bottom: 450px;
-    animation: hovering1 4s ease-in-out infinite;
-    z-index: 99;
+  position: absolute;
+  left: 795px;
+  bottom: 450px;
+  animation: hovering1 4s ease-in-out infinite;
+  z-index: 99;
 }
 
 .con3 .worker1 {
-    position: absolute;
-    left: 1110px;
-    bottom: 330px;
+  position: absolute;
+  left: 1110px;
+  bottom: 330px;
 }
 
 .con3 .worker2 {
-    position: absolute;
-    left: 1250px;
-    bottom: 600px;
+  position: absolute;
+  left: 1250px;
+  bottom: 600px;
 }
 
 .con3 .worker3 {
-    position: absolute;
-    left: 1247px;
-    bottom: -200px;
+  position: absolute;
+  left: 1247px;
+  bottom: -200px;
 }
 
 .con3 .worker4 {
-    position: absolute;
-    left: 1050px;
-    bottom: -460px;
+  position: absolute;
+  left: 1050px;
+  bottom: -460px;
 }
 
 .con3 .worker5 {
-    position: absolute;
-    left: 420px;
-    bottom: -145px;
+  position: absolute;
+  left: 420px;
+  bottom: -145px;
 }
 
 .con3 .human1 {
-    position: absolute;
-    left: 1080px;
-    bottom: 1035px;
+  position: absolute;
+  left: 1080px;
+  bottom: 1035px;
 }
 
 .con3 .human2 {
-    position: absolute;
-    left: 305px;
-    bottom: 152px;
+  position: absolute;
+  left: 305px;
+  bottom: 152px;
 }
 
 .con3 .workcar1 {
-    position: absolute;
-    left: 360px;
-    bottom: 790px;
-    animation: driving3 12s ease-in-out infinite;
-    animation-delay: 6s;
+  position: absolute;
+  left: 360px;
+  bottom: 790px;
+  animation: driving3 12s ease-in-out infinite;
+  animation-delay: 6s;
 }
 
 .con3 .workcar2 {
-    position: absolute;
-    left: 1135px;
-    bottom: 48px;
-    animation: driving1 12s ease-in-out infinite;
-    animation-delay: 5s;
+  position: absolute;
+  left: 1135px;
+  bottom: 48px;
+  animation: driving1 12s ease-in-out infinite;
+  animation-delay: 5s;
 }
 
 .con3 .workcar3 {
-    position: absolute;
-    left: 630px;
-    bottom: -260px;
-    animation: driving1 15s ease-in-out infinite;
-    animation-delay: 1s;
+  position: absolute;
+  left: 630px;
+  bottom: -260px;
+  animation: driving1 15s ease-in-out infinite;
+  animation-delay: 1s;
 }
 
 .con3 .movingcap {
-    position: absolute;
-    left: 573px;
-    bottom: -280px;
-    animation: driving1 15s ease-in-out infinite;
-    animation-delay: 1s;
+  position: absolute;
+  left: 573px;
+  bottom: -280px;
+  animation: driving1 15s ease-in-out infinite;
+  animation-delay: 1s;
 }
 
 .con3 .drone {
-    position: absolute;
-    left: 1258px;
-    bottom: 910px;
-    animation: hovering2 4s ease-in-out infinite;
-    animation-delay: 1s;
+  position: absolute;
+  left: 1258px;
+  bottom: 910px;
+  animation: hovering2 4s ease-in-out infinite;
+  animation-delay: 1s;
 }
 
 .capsule26 {
-    position: absolute;
-    left: 595px;
-    bottom: 1118px;
-    opacity: 0;
-    animation: moveslider8 12s linear infinite;
-    animation-delay: 2s;
+  position: absolute;
+  left: 595px;
+  bottom: 1118px;
+  opacity: 0;
+  animation: moveslider8 12s linear infinite;
+  animation-delay: 2s;
 }
 
 .capsule27 {
-    position: absolute;
-    left: 595px;
-    bottom: 1118px;
-    opacity: 0;
-    animation: moveslider8 12s linear infinite;
-    animation-delay: 4s;
+  position: absolute;
+  left: 595px;
+  bottom: 1118px;
+  opacity: 0;
+  animation: moveslider8 12s linear infinite;
+  animation-delay: 4s;
 }
 
 .capsule28 {
-    position: absolute;
-    left: 595px;
-    bottom: 1118px;
-    opacity: 0;
-    animation: moveslider8 12s linear infinite;
-    animation-delay: 6s;
+  position: absolute;
+  left: 595px;
+  bottom: 1118px;
+  opacity: 0;
+  animation: moveslider8 12s linear infinite;
+  animation-delay: 6s;
 }
 
 .capsule29 {
-    position: absolute;
-    left: 595px;
-    bottom: 1118px;
-    opacity: 0;
-    animation: moveslider8 12s linear infinite;
-    animation-delay: 8s;
+  position: absolute;
+  left: 595px;
+  bottom: 1118px;
+  opacity: 0;
+  animation: moveslider8 12s linear infinite;
+  animation-delay: 8s;
 }
 
 .capsule30 {
-    position: absolute;
-    left: 595px;
-    bottom: 1118px;
-    opacity: 0;
-    animation: moveslider8 12s linear infinite;
-    animation-delay: 10s;
+  position: absolute;
+  left: 595px;
+  bottom: 1118px;
+  opacity: 0;
+  animation: moveslider8 12s linear infinite;
+  animation-delay: 10s;
 }
 
 .capsule31 {
-    position: absolute;
-    left: 595px;
-    bottom: 1118px;
-    opacity: 0;
-    animation: moveslider8 12s linear infinite;
-    animation-delay: 12s;
+  position: absolute;
+  left: 595px;
+  bottom: 1118px;
+  opacity: 0;
+  animation: moveslider8 12s linear infinite;
+  animation-delay: 12s;
 }
 
 /* 방향전환 */
 
 .capsule32 {
-    position: absolute;
-    left: 1088px;
-    bottom: 822px;
-    opacity: 0;
-    animation: moveslider9 6s linear infinite;
-    animation-delay: 14s;
+  position: absolute;
+  left: 1088px;
+  bottom: 822px;
+  opacity: 0;
+  animation: moveslider9 6s linear infinite;
+  animation-delay: 14s;
 }
 
 .capsule33 {
-    position: absolute;
-    left: 1088px;
-    bottom: 822px;
-    opacity: 0;
-    animation: moveslider9 6s linear infinite;
-    animation-delay: 16s;
+  position: absolute;
+  left: 1088px;
+  bottom: 822px;
+  opacity: 0;
+  animation: moveslider9 6s linear infinite;
+  animation-delay: 16s;
 }
 
 .capsule34 {
-    position: absolute;
-    left: 1088px;
-    bottom: 822px;
-    opacity: 0;
-    animation: moveslider9 6s linear infinite;
-    animation-delay: 18s;
+  position: absolute;
+  left: 1088px;
+  bottom: 822px;
+  opacity: 0;
+  animation: moveslider9 6s linear infinite;
+  animation-delay: 18s;
 }
 
 @keyframes moveslider8 {
-    0% {
-        transform: translateX(0) translateY(0);
-        opacity: 0;
-    }
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
 
-    5% {
-        opacity: 1;
-    }
+  5% {
+    opacity: 1;
+  }
 
-    100% {
-        transform: translateX(493px) translateY(296px);
-        opacity: 1;
-    }
+  100% {
+    transform: translateX(493px) translateY(296px);
+    opacity: 1;
+  }
 }
 
 @keyframes moveslider9 {
-    0% {
-        transform: translateX(0) translateY(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
 
-    100% {
-        transform: translateX(-150px) translateY(110px);
-        opacity: 1;
-    }
+  100% {
+    transform: translateX(-150px) translateY(110px);
+    opacity: 1;
+  }
 }
 
 /* 회전판 */
 
 .capsule35 {
-    position: absolute;
-    left: 887px;
-    bottom: 691px;
-    animation: rotate2 4s linear infinite;
+  position: absolute;
+  left: 887px;
+  bottom: 691px;
+  animation: rotate2 4s linear infinite;
 }
 
-
 @keyframes rotate2 {
-    0% {
-        transform: translateX(0) translateY(0);
-    }
+  0% {
+    transform: translateX(0) translateY(0);
+  }
 
-    100% {
-        transform: translateX(52px) translateY(70px);
-    }
+  100% {
+    transform: translateX(52px) translateY(70px);
+  }
 }
 
 .capsule36 {
-    position: absolute;
-    left: 939px;
-    bottom: 621px;
-    animation: rotate3 4s linear infinite;
+  position: absolute;
+  left: 939px;
+  bottom: 621px;
+  animation: rotate3 4s linear infinite;
 }
 
 @keyframes rotate3 {
-    0% {
-        transform: translateX(0) translateY(0);
-    }
+  0% {
+    transform: translateX(0) translateY(0);
+  }
 
-    100% {
-        transform: translateX(-61px) translateY(67px);
-    }
+  100% {
+    transform: translateX(-61px) translateY(67px);
+  }
 }
 
 .capsule37 {
-    position: absolute;
-    left: 878px;
-    bottom: 554px;
-    animation: rotate4 4s linear infinite;
+  position: absolute;
+  left: 878px;
+  bottom: 554px;
+  animation: rotate4 4s linear infinite;
 }
 
 @keyframes rotate4 {
-    0% {
-        transform: translateX(0) translateY(0);
-    }
+  0% {
+    transform: translateX(0) translateY(0);
+  }
 
-    100% {
-        transform: translateX(-130px) translateY(13px);
-    }
+  100% {
+    transform: translateX(-130px) translateY(13px);
+  }
 }
 
 .capsule38 {
-    position: absolute;
-    left: 748px;
-    bottom: 541px;
-    animation: rotate5 4s linear infinite;
+  position: absolute;
+  left: 748px;
+  bottom: 541px;
+  animation: rotate5 4s linear infinite;
 }
 
 @keyframes rotate5 {
-    0% {
-        transform: translateX(0) translateY(0);
-    }
+  0% {
+    transform: translateX(0) translateY(0);
+  }
 
-    100% {
-        transform: translateX(-88px) translateY(-54px);
-    }
+  100% {
+    transform: translateX(-88px) translateY(-54px);
+  }
 }
 
 .capsule39 {
-    position: absolute;
-    left: 660px;
-    bottom: 595px;
-    animation: rotate6 4s linear infinite;
+  position: absolute;
+  left: 660px;
+  bottom: 595px;
+  animation: rotate6 4s linear infinite;
 }
 
 @keyframes rotate6 {
-    0% {
-        transform: translateX(0) translateY(0);
-    }
+  0% {
+    transform: translateX(0) translateY(0);
+  }
 
-    100% {
-        transform: translateX(16px) translateY(-77px);
-    }
+  100% {
+    transform: translateX(16px) translateY(-77px);
+  }
 }
 
 .capsule40 {
-    position: absolute;
-    left: 676px;
-    bottom: 672px;
-    animation: rotate7 4s linear infinite;
+  position: absolute;
+  left: 676px;
+  bottom: 672px;
+  animation: rotate7 4s linear infinite;
 }
 
 @keyframes rotate7 {
-    0% {
-        transform: translateX(0) translateY(0);
-    }
+  0% {
+    transform: translateX(0) translateY(0);
+  }
 
-    100% {
-        transform: translateX(93px) translateY(-38px);
-    }
+  100% {
+    transform: translateX(93px) translateY(-38px);
+  }
 }
 
 .capsule41 {
-    position: absolute;
-    left: 769px;
-    bottom: 710px;
-    animation: rotate8 4s linear infinite;
+  position: absolute;
+  left: 769px;
+  bottom: 710px;
+  animation: rotate8 4s linear infinite;
 }
 
 @keyframes rotate8 {
-    0% {
-        transform: translateX(0) translateY(0);
-    }
+  0% {
+    transform: translateX(0) translateY(0);
+  }
 
-    100% {
-        transform: translateX(118px) translateY(19px);
-    }
+  100% {
+    transform: translateX(118px) translateY(19px);
+  }
 }
 
 .machinearm1 {
-    position: absolute;
-    left: 403px;
-    bottom: 461px;
+  position: absolute;
+  left: 403px;
+  bottom: 461px;
 }
 
 .machinearm2 {
-    position: absolute;
-    left: 378px;
-    bottom: 333px;
+  position: absolute;
+  left: 378px;
+  bottom: 333px;
 }
 
 .capsule42 {
-    position: absolute;
-    left: 615px;
-    bottom: 545px;
-    animation: moveslider10 5s linear infinite;
+  position: absolute;
+  left: 615px;
+  bottom: 545px;
+  animation: moveslider10 5s linear infinite;
 }
 
 .capsule43 {
-    position: absolute;
-    left: 409px;
-    bottom: 530px;
-    transform: rotateZ(112deg);
+  position: absolute;
+  left: 409px;
+  bottom: 530px;
+  transform: rotateZ(112deg);
 }
 
 .capsule44 {
-    position: absolute;
-    left: 527px;
-    bottom: 436px;
-    transform: rotateZ(-70deg);
+  position: absolute;
+  left: 527px;
+  bottom: 436px;
+  transform: rotateZ(-70deg);
 }
 
 @keyframes moveslider10 {
-    0% {
-        transform: translateX(0) translateY(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
 
-    95% {
-        opacity: 1;
-    }
+  95% {
+    opacity: 1;
+  }
 
-    100% {
-        transform: translateX(-120px) translateY(85px);
-        opacity: 0;
-    }
+  100% {
+    transform: translateX(-120px) translateY(85px);
+    opacity: 0;
+  }
 }
 
 /* .capsulebig1 {
@@ -1959,458 +1956,455 @@ html {
 } */
 
 .capsulebig2 {
-    position: absolute;
-    left: 404px;
-    bottom: 419px;
-    opacity: 0;
-    animation: moveslider11 5s linear infinite;
-    animation-delay: 5s;
+  position: absolute;
+  left: 404px;
+  bottom: 419px;
+  opacity: 0;
+  animation: moveslider11 5s linear infinite;
+  animation-delay: 5s;
 }
 
 .capsulebig3 {
-    position: absolute;
-    left: 250px;
-    bottom: 315px;
-    opacity: 0;
-    animation: moveslider12 10s linear infinite;
-    animation-delay: 10s;
+  position: absolute;
+  left: 250px;
+  bottom: 315px;
+  opacity: 0;
+  animation: moveslider12 10s linear infinite;
+  animation-delay: 10s;
 }
 
 .capsulebig4 {
-    position: absolute;
-    left: 250px;
-    bottom: 315px;
-    opacity: 0;
-    animation: moveslider12 10s linear infinite;
-    animation-delay: 15s;
+  position: absolute;
+  left: 250px;
+  bottom: 315px;
+  opacity: 0;
+  animation: moveslider12 10s linear infinite;
+  animation-delay: 15s;
 }
 
 .capsulebig5 {
-    position: absolute;
-    left: 250px;
-    bottom: 315px;
-    opacity: 0;
-    animation: moveslider12 10s linear infinite;
-    animation-delay: 20s;
+  position: absolute;
+  left: 250px;
+  bottom: 315px;
+  opacity: 0;
+  animation: moveslider12 10s linear infinite;
+  animation-delay: 20s;
 }
 
 @keyframes moveslider11 {
-    0% {
-        transform: translateX(0) translateY(0);
-        opacity: 0;
-    }
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
 
-    5% {
-        opacity: 1;
-    }
+  5% {
+    opacity: 1;
+  }
 
-    100% {
-        transform: translateX(-154px) translateY(104px);
-        opacity: 1;
-    }
+  100% {
+    transform: translateX(-154px) translateY(104px);
+    opacity: 1;
+  }
 }
 
 @keyframes moveslider12 {
-    0% {
-        transform: translateX(0) translateY(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
 
-    95% {
-        opacity: 1;
-    }
+  95% {
+    opacity: 1;
+  }
 
-    100% {
-        transform: translateX(390px) translateY(230px);
-        opacity: 0;
-    }
+  100% {
+    transform: translateX(390px) translateY(230px);
+    opacity: 0;
+  }
 }
-
 
 /* 섹션 4 */
 
 #section4 {
-    height: 516px;
-    width: 613px;
-    left: 1790px;
-    top: 742px;
-    position: absolute;
-    display: inline-block;
+  height: 516px;
+  width: 613px;
+  left: 1790px;
+  top: 742px;
+  position: absolute;
+  display: inline-block;
 }
 
 .pot img {
-    animation: moveAndTilt 5s ease-in-out infinite;
+  animation: moveAndTilt 5s ease-in-out infinite;
 }
 
 @keyframes moveAndTilt {
-    0% {
-        transform: translateY(0) rotate(0deg);
-    }
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
 
-    50% {
-        transform: translateY(-30px) rotate(-3deg);
-    }
+  50% {
+    transform: translateY(-30px) rotate(-3deg);
+  }
 
-    100% {
-        transform: translateY(0) rotate(0deg);
-    }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
 }
 
 #section4 .workcar1 {
-    position: absolute;
-    right: 1025px;
-    top: 630px;
-    animation: driving3 20s ease-in-out infinite;
-    animation-delay: 1s;
+  position: absolute;
+  right: 1025px;
+  top: 630px;
+  animation: driving3 20s ease-in-out infinite;
+  animation-delay: 1s;
 }
 
 #section4 .worker1 {
-    position: absolute;
-    right: 1000px;
-    top: 590px;
+  position: absolute;
+  right: 1000px;
+  top: 590px;
 }
 
 #section4 .worker2 {
-    position: absolute;
-    right: -115px;
-    bottom: -145px;
+  position: absolute;
+  right: -115px;
+  bottom: -145px;
 }
 
 #section4 .workcar2 {
-    position: absolute;
-    right: -240px;
-    top: -5px;
-    animation: driving2 15s ease-in-out infinite;
-    animation-delay: 5s;
+  position: absolute;
+  right: -240px;
+  top: -5px;
+  animation: driving2 15s ease-in-out infinite;
+  animation-delay: 5s;
 }
 
 @keyframes driving2 {
-    0% {
-        transform: translateX(0) translateY(0);
-    }
+  0% {
+    transform: translateX(0) translateY(0);
+  }
 
-    50% {
-        transform: translateX(-300px) translateY(155px);
-    }
+  50% {
+    transform: translateX(-300px) translateY(155px);
+  }
 
-    100% {
-        transform: translateX(0) translateY(0);
-    }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
 }
 
 @keyframes driving3 {
-    0% {
-        transform: translateX(0) translateY(0);
-    }
+  0% {
+    transform: translateX(0) translateY(0);
+  }
 
-    50% {
-        transform: translateX(-245px) translateY(-140px);
-    }
+  50% {
+    transform: translateX(-245px) translateY(-140px);
+  }
 
-    100% {
-        transform: translateX(0) translateY(0);
-    }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
 }
-
 
 /* 커피머신 팝업 */
 
-
 .coffeepopup {
-    position: absolute;
-    width: 1920px;
-    height: 1080px;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    display: none;
-    z-index: 999;
-    overflow: hidden;
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  display: none;
+  z-index: 999;
+  overflow: hidden;
 }
 
 .overlay2 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 998;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 998;
 }
 
 .backgroundglass {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 9989;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 9989;
 }
 
 .backgroundimg {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 9990;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 9990;
 }
 
 .backgroundunder {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 9991;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 9991;
 }
 
 .leftglass {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 9992;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 9992;
 }
 
 .rightglass {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 9992;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 9992;
 }
 
 .cancel {
-    position: absolute;
-    right: 2%;
-    top: 2%;
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
-    z-index: 9999;
-    display: none;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  z-index: 9999;
+  display: none;
 }
 
 .side {
-    position: absolute;
-    left: -12px;
-    bottom: 252px;
-    z-index: 9993;
+  position: absolute;
+  left: -12px;
+  bottom: 252px;
+  z-index: 9993;
 }
 
 .sideunder {
-    position: absolute;
-    left: -11px;
-    bottom: 252px;
-    z-index: 9994;
+  position: absolute;
+  left: -11px;
+  bottom: 252px;
+  z-index: 9994;
 }
 
 .machinebuttons {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 9995;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 9995;
 }
 
 .btnall {
-    position: absolute;
-    left: 700px;
-    bottom: 300px;
-    z-index: 9996;
+  position: absolute;
+  left: 700px;
+  bottom: 300px;
+  z-index: 9996;
 }
 
 .scanbtn {
-    position: absolute;
-    left: 663px;
-    bottom: -14px;
-    z-index: 9997;
+  position: absolute;
+  left: 663px;
+  bottom: -14px;
+  z-index: 9997;
 }
 
 .scanimg {
-    position: absolute;
-    bottom: 379px;
-    left: 340px;
-    display: none;
-    z-index: 9992;
+  position: absolute;
+  bottom: 379px;
+  left: 340px;
+  display: none;
+  z-index: 9992;
 }
 
 .scanning {
-    position: absolute;
-    bottom: 170px;
-    left: 770px;
-    display: none;
-    z-index: 9999;
+  position: absolute;
+  bottom: 170px;
+  left: 770px;
+  display: none;
+  z-index: 9999;
 }
 
 .testbtn {
-    position: absolute;
-    left: 1005px;
-    bottom: -14px;
-    z-index: 9997;
+  position: absolute;
+  left: 1005px;
+  bottom: -14px;
+  z-index: 9997;
 }
 
 .testing {
-    position: absolute;
-    bottom: 170px;
-    left: 800px;
-    display: none;
-    z-index: 9999;
+  position: absolute;
+  bottom: 170px;
+  left: 800px;
+  display: none;
+  z-index: 9999;
 }
 
 .btncolors {
-    position: absolute;
-    z-index: 9998;
-    left: 0;
-    bottom: 0;
+  position: absolute;
+  z-index: 9998;
+  left: 0;
+  bottom: 0;
 }
 
 .colors {
-    opacity: 0;
+  opacity: 0;
 }
 
 .pinkbtn {
-    position: absolute;
-    left: 700px;
-    bottom: 300px;
+  position: absolute;
+  left: 700px;
+  bottom: 300px;
 }
 
 .whitebtn {
-    position: absolute;
-    left: 806px;
-    bottom: 300px;
+  position: absolute;
+  left: 806px;
+  bottom: 300px;
 }
 
 .redbtn {
-    position: absolute;
-    left: 912px;
-    bottom: 300px;
+  position: absolute;
+  left: 912px;
+  bottom: 300px;
 }
 
 .blackbtn {
-    position: absolute;
-    left: 1017px;
-    bottom: 300px;
+  position: absolute;
+  left: 1017px;
+  bottom: 300px;
 }
 
 .yellowbtn {
-    position: absolute;
-    left: 1123px;
-    bottom: 300px;
+  position: absolute;
+  left: 1123px;
+  bottom: 300px;
 }
 
 .bluebtn {
-    position: absolute;
-    left: 1229px;
-    bottom: 300px;
+  position: absolute;
+  left: 1229px;
+  bottom: 300px;
 }
 
 .greenbtn {
-    position: absolute;
-    left: 1335px;
-    bottom: 300px;
+  position: absolute;
+  left: 1335px;
+  bottom: 300px;
 }
 
 .machinebody {
-    position: absolute;
-    left: 613px;
-    bottom: 400px;
-    z-index: 9993;
+  position: absolute;
+  left: 613px;
+  bottom: 400px;
+  z-index: 9993;
 }
 
 .water {
-    position: absolute;
-    width: 122px;
-    height: 160px;
-    left: 616px;
-    bottom: 454px;
-    background: #fff;
-    opacity: 0.2;
-    z-index: 9993;
+  position: absolute;
+  width: 122px;
+  height: 160px;
+  left: 616px;
+  bottom: 454px;
+  background: #fff;
+  opacity: 0.2;
+  z-index: 9993;
 }
 
 .machinehead {
-    position: absolute;
-    left: 738px;
-    bottom: 673px;
-    z-index: 9992;
-    transform-origin: left bottom;
+  position: absolute;
+  left: 738px;
+  bottom: 673px;
+  z-index: 9992;
+  transform-origin: left bottom;
 }
 
 .machinehead img {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 9992;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 9992;
 }
 
 .headjoint {
-    position: absolute;
-    left: 850px;
-    bottom: 1059px;
-    z-index: 9991;
+  position: absolute;
+  left: 850px;
+  bottom: 1059px;
+  z-index: 9991;
 }
 
 .machinepart1 {
-    position: absolute;
-    left: 734px;
-    bottom: 672px;
-    z-index: 9990;
-    display: none;
+  position: absolute;
+  left: 734px;
+  bottom: 672px;
+  z-index: 9990;
+  display: none;
 }
 
 .machinepart2 {
-    position: absolute;
-    left: 260px;
-    bottom: 0px;
-    transform: rotateZ(33deg);
-    display: none;
-    z-index: 9991;
+  position: absolute;
+  left: 260px;
+  bottom: 0px;
+  transform: rotateZ(33deg);
+  display: none;
+  z-index: 9991;
 }
 
 .machinepart3 {
-    position: absolute;
-    left: 1040px;
-    bottom: 672px;
-    z-index: 9991;
+  position: absolute;
+  left: 1040px;
+  bottom: 672px;
+  z-index: 9991;
 }
 
 .testcap {
-    position: absolute;
-    left: 1062px;
-    bottom: 760px;
-    z-index: 9990;
-    display: none;
+  position: absolute;
+  left: 1062px;
+  bottom: 760px;
+  z-index: 9990;
+  display: none;
 }
 
 .coffeeshot {
-    width: 66px;
-    height: 138px;
-    position: absolute;
-    left: 1152px;
-    bottom: 471px;
-    z-index: 9991;
-    overflow: hidden;
-    clip-path: polygon(100% 0, 100% 91%, 86% 97%, 50% 100%, 14% 97%, 0 91%, 0 0);
+  width: 66px;
+  height: 138px;
+  position: absolute;
+  left: 1152px;
+  bottom: 471px;
+  z-index: 9991;
+  overflow: hidden;
+  clip-path: polygon(100% 0, 100% 91%, 86% 97%, 50% 100%, 14% 97%, 0 91%, 0 0);
 }
 
 .coffee {
-    position: absolute;
-    left: 0;
-    bottom: -44px;
-    width: 65px;
-    height: 50px;
-    background: #1b0d0d;
-    overflow: hidden;
+  position: absolute;
+  left: 0;
+  bottom: -44px;
+  width: 65px;
+  height: 50px;
+  background: #1b0d0d;
+  overflow: hidden;
 }
 
 .crema {
-    position: absolute;
-    left: 0px;
-    bottom: -10px;
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
 }
 
 .coffeefall {
-    position: absolute;
-    left: 30px;
-    top: -131px;
+  position: absolute;
+  left: 30px;
+  top: -131px;
 }
 
 .coffeeglass {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
